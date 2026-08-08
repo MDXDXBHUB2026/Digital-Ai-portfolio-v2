@@ -28,44 +28,70 @@ function wrapSvgText(text, x, y, maxChars, fontSize, fill, fontWeight = '400', l
     `</text>`;
 }
 
-// Common styles & defs for Light Colorful Premium Glassy Theme
+// Common styles & defs for Green, Yellow & Orange Premium Glassy Theme with Multicolored Elements
 const electronicsDefs = `
   <defs>
-    <!-- Light Colorful Background Gradient -->
+    <!-- Vibrant Green, Yellow & Orange Background Gradient -->
     <linearGradient id="elecBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc" />
-      <stop offset="40%" stop-color="#f0f4fd" />
-      <stop offset="70%" stop-color="#edf2ff" />
-      <stop offset="100%" stop-color="#f5f3ff" />
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="35%" stop-color="#fefce8" />
+      <stop offset="70%" stop-color="#fff7ed" />
+      <stop offset="100%" stop-color="#f0fdf4" />
     </linearGradient>
 
-    <!-- Colorful Brand Gradients -->
-    <linearGradient id="cyanBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Green, Yellow & Orange Brand Gradients -->
+    <linearGradient id="greenYellowOrangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="45%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+    <linearGradient id="multicolorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="33%" stop-color="#d97706" />
+      <stop offset="66%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <linearGradient id="blueOrangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0284c7" />
-      <stop offset="50%" stop-color="#2563eb" />
-      <stop offset="100%" stop-color="#0d9488" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
     </linearGradient>
 
-    <linearGradient id="violetRoseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c3aed" />
-      <stop offset="100%" stop-color="#e11d48" />
+    <linearGradient id="cyanBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+    <linearGradient id="orangeYellowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="50%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#eab308" />
     </linearGradient>
 
     <linearGradient id="amberGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d97706" />
-      <stop offset="100%" stop-color="#f59e0b" />
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+
+    <linearGradient id="yellowBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#10b981" />
     </linearGradient>
 
     <!-- Glass Card Gradient -->
     <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#fefce8" stop-opacity="0.88" />
     </linearGradient>
 
     <linearGradient id="glassInnerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08" />
-      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.05" />
-      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.06" />
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#facc15" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0.18" />
     </linearGradient>
 
     <!-- Soft Diffuse Shadows -->
@@ -74,7 +100,7 @@ const electronicsDefs = `
     </filter>
 
     <filter id="colorfulGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feGaussianBlur stdDeviation="18" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
@@ -135,12 +161,12 @@ function buildHomeSVG() {
     ${electronicsDefs}
     <rect width="1600" height="900" fill="url(#elecBgGrad)" />
 
-    <!-- Vibrant Light Ambient Mesh Glows -->
-    <g opacity="0.6">
-      <circle cx="250" cy="180" r="320" fill="#38bdf8" opacity="0.2" filter="url(#colorfulGlow)"/>
-      <circle cx="1350" cy="220" r="380" fill="#a7f3d0" opacity="0.25" filter="url(#colorfulGlow)"/>
-      <circle cx="800" cy="650" r="450" fill="#c084fc" opacity="0.18" filter="url(#colorfulGlow)"/>
-      <circle cx="1400" cy="750" r="300" fill="#fde047" opacity="0.2" filter="url(#colorfulGlow)"/>
+    <!-- Vibrant Green, Yellow & Orange Ambient Mesh Glows -->
+    <g opacity="0.85">
+      <circle cx="250" cy="180" r="380" fill="#34d399" opacity="0.40" filter="url(#colorfulGlow)"/>
+      <circle cx="1350" cy="220" r="400" fill="#facc15" opacity="0.40" filter="url(#colorfulGlow)"/>
+      <circle cx="750" cy="650" r="450" fill="#fb923c" opacity="0.40" filter="url(#colorfulGlow)"/>
+      <circle cx="1400" cy="750" r="350" fill="#10b981" opacity="0.35" filter="url(#colorfulGlow)"/>
     </g>
 
     ${getElectronicsHeader('STORE')}
@@ -260,10 +286,11 @@ function buildCatalogSVG() {
     ${electronicsDefs}
     <rect width="1600" height="900" fill="url(#elecBgGrad)" />
 
-    <!-- Ambient Glows -->
-    <g opacity="0.5">
-      <circle cx="200" cy="200" r="300" fill="#38bdf8" opacity="0.2" filter="url(#colorfulGlow)"/>
-      <circle cx="1400" cy="300" r="350" fill="#c084fc" opacity="0.2" filter="url(#colorfulGlow)"/>
+    <!-- Ambient Green, Yellow & Orange Glows -->
+    <g opacity="0.8">
+      <circle cx="200" cy="200" r="380" fill="#34d399" opacity="0.40" filter="url(#colorfulGlow)"/>
+      <circle cx="1400" cy="300" r="400" fill="#fb923c" opacity="0.38" filter="url(#colorfulGlow)"/>
+      <circle cx="800" cy="700" r="420" fill="#facc15" opacity="0.35" filter="url(#colorfulGlow)"/>
     </g>
 
     ${getElectronicsHeader('CATALOG')}
@@ -382,10 +409,11 @@ function buildProductSVG() {
     ${electronicsDefs}
     <rect width="1600" height="900" fill="url(#elecBgGrad)" />
 
-    <!-- Ambient Colorful Glows -->
-    <g opacity="0.5">
-      <circle cx="300" cy="300" r="350" fill="#38bdf8" opacity="0.2" filter="url(#colorfulGlow)"/>
-      <circle cx="1200" cy="400" r="400" fill="#f472b6" opacity="0.18" filter="url(#colorfulGlow)"/>
+    <!-- Ambient Green, Yellow & Orange Glows -->
+    <g opacity="0.8">
+      <circle cx="300" cy="300" r="400" fill="#34d399" opacity="0.40" filter="url(#colorfulGlow)"/>
+      <circle cx="1200" cy="400" r="420" fill="#fb923c" opacity="0.38" filter="url(#colorfulGlow)"/>
+      <circle cx="700" cy="750" r="380" fill="#facc15" opacity="0.35" filter="url(#colorfulGlow)"/>
     </g>
 
     ${getElectronicsHeader('FLAGSHIP X1')}
@@ -473,10 +501,11 @@ function buildCartSVG() {
     ${electronicsDefs}
     <rect width="1600" height="900" fill="url(#elecBgGrad)" />
 
-    <!-- Ambient Colorful Mesh -->
-    <g opacity="0.5">
-      <circle cx="200" cy="300" r="300" fill="#38bdf8" opacity="0.2" filter="url(#colorfulGlow)"/>
-      <circle cx="1300" cy="500" r="350" fill="#a7f3d0" opacity="0.22" filter="url(#colorfulGlow)"/>
+    <!-- Ambient Green, Yellow & Orange Mesh -->
+    <g opacity="0.8">
+      <circle cx="200" cy="300" r="380" fill="#34d399" opacity="0.40" filter="url(#colorfulGlow)"/>
+      <circle cx="1300" cy="500" r="400" fill="#ea580c" opacity="0.38" filter="url(#colorfulGlow)"/>
+      <circle cx="750" cy="200" r="350" fill="#fde047" opacity="0.35" filter="url(#colorfulGlow)"/>
     </g>
 
     ${getElectronicsHeader('CART')}
@@ -577,10 +606,11 @@ function buildSupportSVG() {
     ${electronicsDefs}
     <rect width="1600" height="900" fill="url(#elecBgGrad)" />
 
-    <!-- Ambient Colorful Glows -->
-    <g opacity="0.5">
-      <circle cx="250" cy="250" r="320" fill="#38bdf8" opacity="0.2" filter="url(#colorfulGlow)"/>
-      <circle cx="1350" cy="350" r="380" fill="#c084fc" opacity="0.2" filter="url(#colorfulGlow)"/>
+    <!-- Ambient Green, Yellow & Orange Glows -->
+    <g opacity="0.8">
+      <circle cx="250" cy="250" r="380" fill="#34d399" opacity="0.40" filter="url(#colorfulGlow)"/>
+      <circle cx="1350" cy="350" r="400" fill="#ea580c" opacity="0.38" filter="url(#colorfulGlow)"/>
+      <circle cx="800" cy="650" r="380" fill="#fde047" opacity="0.35" filter="url(#colorfulGlow)"/>
     </g>
 
     ${getElectronicsHeader('SUPPORT')}

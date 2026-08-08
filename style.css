@@ -43,29 +43,31 @@ html {
 
 
 body {
-
   min-height: 100vh;
-
   overflow-x: hidden;
-
   color: var(--text);
-
   background:
-
     radial-gradient(
-      circle at 80% 0%,
-      rgba(37, 99, 235, 0.12),
-      transparent 35%
+      circle at 12% 15%,
+      rgba(16, 185, 129, 0.32), /* Vibrant Emerald Green */
+      transparent 45%
     ),
-
     radial-gradient(
-      circle at 20% 50%,
-      rgba(59, 130, 246, 0.06),
-      transparent 40%
+      circle at 85% 25%,
+      rgba(234, 179, 8, 0.38), /* Radiant Golden Yellow */
+      transparent 50%
     ),
-
-    var(--bg);
-
+    radial-gradient(
+      circle at 50% 65%,
+      rgba(249, 115, 22, 0.35), /* Vivid Sunset Orange */
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 88% 85%,
+      rgba(16, 185, 129, 0.28), /* Vibrant Green Glow */
+      transparent 45%
+    ),
+    #fefce8;
   font-family:
     system-ui,
     -apple-system,
@@ -73,9 +75,7 @@ body {
     "Segoe UI",
     Roboto,
     sans-serif;
-
   line-height: 1.6;
-
 }
 
 
@@ -127,45 +127,40 @@ button {
 
 
 .glow {
-
   position: fixed;
-
   z-index: -9;
-
-  width: 520px;
-
-  height: 520px;
-
+  width: 580px;
+  height: 580px;
   border-radius: 50%;
-
-  filter: blur(140px);
-
-  opacity: 0.12;
-
+  filter: blur(120px);
+  opacity: 0.35;
   pointer-events: none;
-
 }
-
 
 .glow-one {
-
-  right: -200px;
-
-  top: -150px;
-
-  background: var(--accent-blue);
-
+  right: -150px;
+  top: -100px;
+  background: #10b981; /* Emerald Green */
 }
 
-
 .glow-two {
+  left: -200px;
+  top: 550px;
+  background: #f97316; /* Sunset Orange */
+}
 
-  left: -250px;
-
-  top: 600px;
-
-  background: var(--accent);
-
+.glow-three {
+  position: fixed;
+  z-index: -9;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  filter: blur(130px);
+  opacity: 0.35;
+  pointer-events: none;
+  right: 10%;
+  top: 1200px;
+  background: #eab308; /* Golden Yellow */
 }
 
 
@@ -462,13 +457,12 @@ section {
 
 
 .hero h1 em {
-
   display: block;
-
-  color: var(--accent);
-
+  background: linear-gradient(120deg, #059669 0%, #d97706 35%, #ea580c 70%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-style: normal;
-
 }
 
 
@@ -898,40 +892,31 @@ section {
 
 
 .project-card {
-
   display: flex;
-
   flex-direction: column;
-
   min-width: 0;
-
   padding: 24px;
-
-  border: 1px solid var(--border);
-
+  border: 1px solid rgba(234, 179, 8, 0.4);
   border-radius: 28px;
-
-  background: var(--surface);
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.08),
+    0 0 25px rgba(16, 185, 129, 0.15),
+    0 0 25px rgba(249, 115, 22, 0.15);
   transition:
-
     transform .28s ease,
     border-color .28s ease,
     box-shadow .28s ease;
-
 }
 
-
 .project-card:hover {
-
   transform: translateY(-4px);
-
-  border-color: rgba(59, 130, 246, 0.4);
-
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
-
+  border-color: rgba(249, 115, 22, 0.65);
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.12),
+    0 0 35px rgba(16, 185, 129, 0.28),
+    0 0 35px rgba(234, 179, 8, 0.28);
 }
 
 
@@ -1453,20 +1438,22 @@ section {
 }
 
 .jermann-electronics-media-area .stacked-card {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(16px);
-  border-color: rgba(2, 132, 199, 0.3);
+  border-color: rgba(2, 132, 199, 0.35);
   box-shadow:
-    0 20px 50px -10px rgba(15, 23, 42, 0.1),
-    0 0 25px rgba(56, 189, 248, 0.15),
+    0 20px 50px -10px rgba(15, 23, 42, 0.12),
+    0 0 30px rgba(249, 115, 22, 0.18),
+    0 0 15px rgba(234, 179, 8, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
 
 .jermann-electronics-media-area .stacked-card[data-offset="0"] {
   border-color: rgba(2, 132, 199, 0.85);
   box-shadow:
-    0 25px 65px -12px rgba(2, 132, 199, 0.25),
-    0 0 35px rgba(56, 189, 248, 0.25),
+    0 25px 65px -12px rgba(2, 132, 199, 0.3),
+    0 0 35px rgba(249, 115, 22, 0.28),
+    0 0 20px rgba(234, 179, 8, 0.22),
     inset 0 1px 0 #ffffff;
 }
 
@@ -1477,18 +1464,18 @@ section {
 }
 
 .jermann-electronics-media-area .deck-tab {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.82);
   color: #475569;
-  border-color: rgba(226, 232, 240, 0.9);
+  border-color: rgba(226, 232, 240, 0.95);
   backdrop-filter: blur(10px);
 }
 
 .jermann-electronics-media-area .deck-tab.active {
   color: #0284c7;
-  background: rgba(2, 132, 199, 0.12);
-  border-color: rgba(2, 132, 199, 0.5);
-  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2);
-  font-weight: 700;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.15), rgba(249, 115, 22, 0.12));
+  border-color: rgba(2, 132, 199, 0.6);
+  box-shadow: 0 4px 18px rgba(249, 115, 22, 0.22);
+  font-weight: 800;
 }
 
 /* 3D OFFSET POSITIONS BASED ON OFFSET ATTRIBUTE */
@@ -1686,30 +1673,25 @@ section {
 
 
 .project-category {
-
-  color: var(--accent);
-
-  font-size: .62rem;
-
-  font-weight: 700;
-
+  background: linear-gradient(90deg, #059669, #d97706, #ea580c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: .65rem;
+  font-weight: 800;
   letter-spacing: 1.5px;
-
   text-transform: uppercase;
-
 }
 
 
 .project-content h3 {
-
   margin: 8px 0 10px;
-
   font-size: 1.45rem;
-
-  font-weight: 700;
-
-  color: var(--text);
-
+  font-weight: 800;
+  background: linear-gradient(120deg, #047857 0%, #ca8a04 35%, #ea580c 70%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 
