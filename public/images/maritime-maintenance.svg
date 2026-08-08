@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#0b1120" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+
+  <!-- Sidebar Nav -->
+  <rect x="0" y="0" width="220" height="900" fill="#070b14" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="38" cy="42" r="16" fill="#0284c7" />
+  <path d="M 38 32 L 38 52 M 30 42 L 46 42 M 33 50 Q 38 55 43 50" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="64" y="38" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="13" letter-spacing="1">MARITIME AI</text>
+  <text x="64" y="50" fill="#64748b" font-family="sans-serif" font-size="8" letter-spacing="0.5">OPERATIONS CONTROL TOWER</text>
+
+  <g font-family="sans-serif" font-size="11" font-weight="500">
+    <text x="42" y="183" fill="#94a3b8">Executive Dashboard</text>
+    <text x="42" y="233" fill="#94a3b8">Fleet Overview</text>
+    <text x="42" y="283" fill="#94a3b8">Anomaly Detection</text>
+    
+    <!-- Active Item: Predictive Maintenance -->
+    <rect x="10" y="310" width="200" height="36" rx="8" fill="#0f2b48" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="42" y="333" fill="#38bdf8" font-weight="700">Predictive Maintenance <tspan fill="#f59e0b" font-weight="800">(5)</tspan></text>
+    
+    <text x="42" y="383" fill="#94a3b8">Voyage &amp; Fuel Optimisation</text>
+    <text x="42" y="433" fill="#94a3b8">Safety Monitoring</text>
+    <text x="42" y="483" fill="#94a3b8">Staging Admin</text>
+  </g>
+
+  <!-- Header -->
+  <text x="250" y="42" fill="#f59e0b" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="1.5">🔧 30-DAY PREDICTIVE MACHINERY RISK ANALYSIS</text>
+  <text x="250" y="75" fill="#ffffff" font-family="sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">Predictive Maintenance</text>
+  <text x="250" y="98" fill="#64748b" font-family="sans-serif" font-size="12">AI-driven vibration FFT spectrums, exhaust temp variance, and wear curve forecasting to prevent catastrophic engine failure.</text>
+
+  <rect x="1330" y="52" width="220" height="38" rx="8" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1350" y="76" fill="#fbbf24" font-family="sans-serif" font-size="12" font-weight="700">🔧 5 Failure Risks Forecasted (30d)</text>
+
+  <!-- MAINTENANCE GRID (5 CARDS) -->
+
+  <!-- CARD 1: MV Northern Light (92% CRITICAL) -->
+  <g transform="translate(250, 140)">
+    <rect width="410" height="330" rx="16" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1.5"/>
+    <rect x="16" y="16" width="115" height="22" rx="4" fill="#991b1b"/>
+    <text x="26" y="31" fill="#fca5a5" font-family="sans-serif" font-size="10" font-weight="800">CRITICAL URGENCY</text>
+
+    <text x="320" y="38" fill="#ef4444" font-family="sans-serif" font-size="26" font-weight="900">92%</text>
+    <text x="315" y="52" fill="#64748b" font-family="sans-serif" font-size="9">Failure Risk</text>
+    
+    <text x="16" y="65" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="800">MV Northern Light</text>
+    <text x="16" y="85" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="700">Main Engine Turbocharger Bearing #2</text>
+    
+    <line x1="16" y1="105" x2="394" y2="105" stroke="#1e293b"/>
+
+    <text x="16" y="130" fill="#64748b" font-family="sans-serif" font-size="11">Time to Failure:</text>
+    <text x="320" y="130" fill="#ef4444" font-family="sans-serif" font-size="12" font-weight="800">~4 days</text>
+
+    <text x="16" y="155" fill="#64748b" font-family="sans-serif" font-size="11">Part Dispatch:</text>
+    <text x="180" y="155" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">MAN B&amp;W TCA66 Bearing Assem...</text>
+
+    <!-- Diagnostics -->
+    <rect x="16" y="180" width="378" height="120" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="30" y="205" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">🪄 AI Diagnostics</text>
+    <text x="30" y="235" fill="#94a3b8" font-family="sans-serif" font-size="12">Vibration frequency analysis shows 18.2 Hz harmonic peak indicative of roller cage cracking.</text>
+  </g>
+
+  <!-- CARD 2: MV Blue Mariner (78% CRITICAL) -->
+  <g transform="translate(695, 140)">
+    <rect width="410" height="330" rx="16" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1.5"/>
+    <rect x="16" y="16" width="115" height="22" rx="4" fill="#991b1b"/>
+    <text x="26" y="31" fill="#fca5a5" font-family="sans-serif" font-size="10" font-weight="800">CRITICAL URGENCY</text>
+
+    <text x="320" y="38" fill="#ef4444" font-family="sans-serif" font-size="26" font-weight="900">78%</text>
+    <text x="315" y="52" fill="#64748b" font-family="sans-serif" font-size="9">Failure Risk</text>
+    
+    <text x="16" y="65" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="800">MV Blue Mariner</text>
+    <text x="16" y="85" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="700">Fuel Injection Pump Solenoid Valve</text>
+
+    <line x1="16" y1="105" x2="394" y2="105" stroke="#1e293b"/>
+
+    <text x="16" y="130" fill="#64748b" font-family="sans-serif" font-size="11">Time to Failure:</text>
+    <text x="315" y="130" fill="#ef4444" font-family="sans-serif" font-size="12" font-weight="800">~11 days</text>
+
+    <text x="16" y="155" fill="#64748b" font-family="sans-serif" font-size="11">Part Dispatch:</text>
+    <text x="220" y="155" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">High Pressure Valve Kit FP-441</text>
+
+    <rect x="16" y="180" width="378" height="120" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="30" y="205" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">🪄 AI Diagnostics</text>
+    <text x="30" y="235" fill="#94a3b8" font-family="sans-serif" font-size="12">Pressure buildup latency increased by 140ms over last 48 operating hours.</text>
+  </g>
+
+  <!-- CARD 3: MV Ocean Crest (64% MEDIUM) -->
+  <g transform="translate(1140, 140)">
+    <rect width="410" height="330" rx="16" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="16" y="16" width="110" height="22" rx="4" fill="#78350f"/>
+    <text x="26" y="31" fill="#fde68a" font-family="sans-serif" font-size="10" font-weight="800">MEDIUM URGENCY</text>
+
+    <text x="320" y="38" fill="#f59e0b" font-family="sans-serif" font-size="26" font-weight="900">64%</text>
+    <text x="315" y="52" fill="#64748b" font-family="sans-serif" font-size="9">Failure Risk</text>
+    
+    <text x="16" y="65" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="800">MV Ocean Crest</text>
+    <text x="16" y="85" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="700">Auxiliary Generator #3 Stator Winding</text>
+
+    <line x1="16" y1="105" x2="394" y2="105" stroke="#1e293b"/>
+
+    <text x="16" y="130" fill="#64748b" font-family="sans-serif" font-size="11">Time to Failure:</text>
+    <text x="315" y="130" fill="#f59e0b" font-family="sans-serif" font-size="12" font-weight="800">~18 days</text>
+
+    <text x="16" y="155" fill="#64748b" font-family="sans-serif" font-size="11">Part Dispatch:</text>
+    <text x="235" y="155" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">Generator Thermal Sensor Set</text>
+
+    <rect x="16" y="180" width="378" height="120" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="30" y="205" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">🪄 AI Diagnostics</text>
+    <text x="30" y="235" fill="#94a3b8" font-family="sans-serif" font-size="12">Thermal imaging telemetry reveals 14°C local delta on phase B winding.</text>
+  </g>
+
+  <!-- CARD 4: MV Gulf Pioneer (58% MEDIUM) -->
+  <g transform="translate(250, 500)">
+    <rect width="410" height="330" rx="16" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="16" y="16" width="110" height="22" rx="4" fill="#78350f"/>
+    <text x="26" y="31" fill="#fde68a" font-family="sans-serif" font-size="10" font-weight="800">MEDIUM URGENCY</text>
+
+    <text x="320" y="38" fill="#f59e0b" font-family="sans-serif" font-size="26" font-weight="900">58%</text>
+    <text x="315" y="52" fill="#64748b" font-family="sans-serif" font-size="9">Failure Risk</text>
+    
+    <text x="16" y="65" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="800">MV Gulf Pioneer</text>
+    <text x="16" y="85" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="700">Seawater Cooling Pump Impeller</text>
+
+    <line x1="16" y1="105" x2="394" y2="105" stroke="#1e293b"/>
+
+    <text x="16" y="130" fill="#64748b" font-family="sans-serif" font-size="11">Time to Failure:</text>
+    <text x="315" y="130" fill="#f59e0b" font-family="sans-serif" font-size="12" font-weight="800">~22 days</text>
+
+    <text x="16" y="155" fill="#64748b" font-family="sans-serif" font-size="11">Part Dispatch:</text>
+    <text x="200" y="155" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">Bronze Impeller 400mm SW-108</text>
+
+    <rect x="16" y="180" width="378" height="120" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="30" y="205" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">🪄 AI Diagnostics</text>
+    <text x="30" y="235" fill="#94a3b8" font-family="sans-serif" font-size="12">Flow rate cavitation harmonic detected during high-speed transit.</text>
+  </g>
+
+  <!-- CARD 5: MV Eastern Venture (49% LOW) -->
+  <g transform="translate(695, 500)">
+    <rect width="410" height="330" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="16" y="16" width="90" height="22" rx="4" fill="#334155"/>
+    <text x="26" y="31" fill="#cbd5e1" font-family="sans-serif" font-size="10" font-weight="800">LOW URGENCY</text>
+
+    <text x="320" y="38" fill="#38bdf8" font-family="sans-serif" font-size="26" font-weight="900">49%</text>
+    <text x="315" y="52" fill="#64748b" font-family="sans-serif" font-size="9">Failure Risk</text>
+    
+    <text x="16" y="65" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="800">MV Eastern Venture</text>
+    <text x="16" y="85" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="700">Hydraulic Steering Gear Actuator Seal</text>
+
+    <line x1="16" y1="105" x2="394" y2="105" stroke="#1e293b"/>
+
+    <text x="16" y="130" fill="#64748b" font-family="sans-serif" font-size="11">Time to Failure:</text>
+    <text x="315" y="130" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="800">~28 days</text>
+
+    <text x="16" y="155" fill="#64748b" font-family="sans-serif" font-size="11">Part Dispatch:</text>
+    <text x="220" y="155" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600">Hydraulic Ring Packing Set</text>
+
+    <rect x="16" y="180" width="378" height="120" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="30" y="205" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">🪄 AI Diagnostics</text>
+    <text x="30" y="235" fill="#94a3b8" font-family="sans-serif" font-size="12">Minor fluid pressure decay registered during hard rudder maneuvers.</text>
+  </g>
+
+</svg>

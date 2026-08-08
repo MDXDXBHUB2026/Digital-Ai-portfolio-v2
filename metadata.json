@@ -1,0 +1,6 @@
+{
+  "name": "Digital AI Portfolio",
+  "description": "AI, digital transformation and business solution prototype portfolio",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#0b1120" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+
+  <!-- Sidebar Nav -->
+  <rect x="0" y="0" width="220" height="900" fill="#070b14" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="38" cy="42" r="16" fill="#0284c7" />
+  <path d="M 38 32 L 38 52 M 30 42 L 46 42 M 33 50 Q 38 55 43 50" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="64" y="38" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="13" letter-spacing="1">MARITIME AI</text>
+  <text x="64" y="50" fill="#64748b" font-family="sans-serif" font-size="8" letter-spacing="0.5">OPERATIONS CONTROL TOWER</text>
+
+  <g font-family="sans-serif" font-size="11" font-weight="500">
+    <text x="42" y="183" fill="#94a3b8">Executive Dashboard</text>
+    <text x="42" y="233" fill="#94a3b8">Fleet Overview</text>
+    <text x="42" y="283" fill="#94a3b8">Anomaly Detection</text>
+    <text x="42" y="333" fill="#94a3b8">Predictive Maintenance</text>
+    <text x="42" y="383" fill="#94a3b8">Voyage &amp; Fuel Optimisation</text>
+    <text x="42" y="433" fill="#94a3b8">Safety Monitoring</text>
+    
+    <!-- Active Item: Staging Admin -->
+    <rect x="10" y="460" width="200" height="36" rx="8" fill="#0f2b48" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="42" y="483" fill="#38bdf8" font-weight="700">Staging Admin</text>
+  </g>
+
+  <!-- Header -->
+  <text x="250" y="42" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="1.5">🗄️ STAGING ENVIRONMENT &amp; DATABASE ORCHESTRATION</text>
+  <text x="250" y="75" fill="#ffffff" font-family="sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5">Staging Database &amp; Schema Admin</text>
+  <text x="250" y="98" fill="#64748b" font-family="sans-serif" font-size="12">Inspect active staging connection pools, trigger schema migrations, query live staging records, and manage database seeding snapshots.</text>
+
+  <rect x="1010" y="52" width="170" height="38" rx="8" fill="url(#cyanGrad)"/>
+  <text x="1025" y="76" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="700">☁ Pull GitHub Staging Data</text>
+
+  <rect x="1195" y="52" width="170" height="38" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="1215" y="76" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="700">🔄 Sync Migration Schema</text>
+
+  <rect x="1380" y="52" width="170" height="38" rx="8" fill="#1e1b4b" stroke="#6366f1"/>
+  <text x="1405" y="76" fill="#a5b4fc" font-family="sans-serif" font-size="12" font-weight="700">💾 Re-seed Dataset</text>
+
+  <!-- STATS CARDS ROW -->
+  <!-- Card 1 -->
+  <g transform="translate(250, 130)">
+    <rect width="310" height="120" rx="12" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <text x="20" y="30" fill="#64748b" font-family="sans-serif" font-size="11">Staging Environment</text>
+    <text x="20" y="60" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="800">Staging - Cloud SQL Europe-west1 Sync</text>
+    <circle cx="26" cy="88" r="5" fill="#34d399"/>
+    <text x="38" y="92" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="700">Synchronized &amp; Healthy</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(580, 130)">
+    <rect width="310" height="120" rx="12" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <text x="20" y="30" fill="#64748b" font-family="sans-serif" font-size="11">Database Engine</text>
+    <text x="20" y="60" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="800">PostgreSQL 16.2 / Staging Pool</text>
+    <text x="20" y="92" fill="#64748b" font-family="sans-serif" font-size="11">Version: v2.4.1-staging-sync-9351</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(910, 130)">
+    <rect width="310" height="120" rx="12" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <text x="20" y="30" fill="#64748b" font-family="sans-serif" font-size="11">Connection Pool</text>
+    <text x="20" y="68" fill="#fbbf24" font-family="sans-serif" font-size="24" font-weight="900">8 / 20 Active</text>
+    <text x="20" y="95" fill="#34d399" font-family="sans-serif" font-size="11">Latency: 15ms</text>
+  </g>
+
+  <!-- Card 4 -->
+  <g transform="translate(1240, 130)">
+    <rect width="310" height="120" rx="12" fill="url(#cardGrad)" stroke="#1e293b"/>
+    <text x="20" y="30" fill="#64748b" font-family="sans-serif" font-size="11">Total Staging Records</text>
+    <text x="20" y="68" fill="#34d399" font-family="sans-serif" font-size="24" font-weight="900">15 Documents</text>
+    <text x="20" y="95" fill="#64748b" font-family="sans-serif" font-size="11">Vessels: 6 • Routes: 3</text>
+  </g>
+
+  <!-- QUERY CONSOLE -->
+  <g transform="translate(250, 270)">
+    <rect width="1300" height="230" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="24" y="35" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="800">❯_ Staging Database Query Console</text>
+    <text x="1150" y="35" fill="#64748b" font-family="sans-serif" font-size="11">Read-only Connection Pool</text>
+
+    <!-- Console Textarea -->
+    <rect x="24" y="55" width="1252" height="100" rx="10" fill="#070b14" stroke="#334155"/>
+    <text x="40" y="90" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="700">SELECT * FROM vessels WHERE status = 'Underway' ORDER BY speed DESC;</text>
+
+    <rect x="24" y="168" width="180" height="42" rx="8" fill="url(#cyanGrad)"/>
+    <text x="45" y="194" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="800">▷ Execute Staging Query</text>
+  </g>
+
+  <!-- TELEMETRY VISUALIZATIONS ROW -->
+  <g transform="translate(250, 520)">
+    <rect width="1300" height="350" rx="16" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="24" y="35" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="800">📈 GITHUB STAGING REPOSITORY INGESTION</text>
+    <text x="24" y="60" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="800">Staging Dataset &amp; Telemetry Visualizations</text>
+
+    <!-- Simulated Chart 1 -->
+    <rect x="24" y="85" width="610" height="240" rx="12" fill="#070b14" stroke="#1e293b"/>
+    <text x="40" y="110" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700">TIME-SERIES FLEET CONSUMPTION</text>
+    <path d="M 50 280 Q 200 210, 350 240 T 600 200 L 600 290 L 50 290 Z" fill="#0284c7" opacity="0.3"/>
+    <path d="M 50 280 Q 200 210, 350 240 T 600 200" fill="none" stroke="#38bdf8" stroke-width="3"/>
+
+    <!-- Simulated Chart 2 -->
+    <rect x="660" y="85" width="610" height="240" rx="12" fill="#070b14" stroke="#1e293b"/>
+    <text x="680" y="110" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700">IMO ENVIRONMENTAL COMPLIANCE</text>
+    <rect x="700" y="180" width="50" height="110" fill="#38bdf8" rx="4"/>
+    <rect x="780" y="150" width="50" height="140" fill="#34d399" rx="4"/>
+    <rect x="860" y="200" width="50" height="90" fill="#fbbf24" rx="4"/>
+    <rect x="940" y="220" width="50" height="70" fill="#ef4444" rx="4"/>
+  </g>
+
+</svg>
