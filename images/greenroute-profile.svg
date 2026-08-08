@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1760" width="100%" height="100%" style="background-color: #ebf5f0;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2fbf6" />
+      <stop offset="100%" stop-color="#e2f3e9" />
+    </linearGradient>
+
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0a2e18" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <style>
+    .txt-title { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #064e3b; }
+    .txt-sub { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 500; fill: #475569; }
+    .txt-dark { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #0f172a; }
+    .txt-muted { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 600; fill: #64748b; }
+    .txt-green { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #059669; }
+    .txt-white { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #ffffff; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="1760" fill="url(#bgGrad)" />
+
+  <!-- App Header Bar -->
+  <rect x="0" y="0" width="800" height="96" fill="#ffffff" />
+  <circle cx="56" cy="48" r="24" fill="#059669" />
+  <path d="M 46 54 C 44 40, 58 34, 68 38 C 68 52, 54 60, 46 54 Z" fill="#ffffff" />
+
+  <text x="96" y="42" class="txt-title" font-size="24">GreenRoute AI</text>
+  <rect x="280" y="24" width="68" height="24" rx="6" fill="#dcfce7" />
+  <text x="291" y="40" fill="#166534" font-family="sans-serif" font-weight="800" font-size="12">DEMO</text>
+  <text x="96" y="68" class="txt-sub" font-size="14">Mobility &amp; Accessibility Settings</text>
+
+  <rect x="570" y="28" width="120" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="596" y="53" class="txt-dark" font-size="15">🌐 العربية</text>
+  <circle cx="730" cy="48" r="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="723" y="54" class="txt-dark" font-size="17">T</text>
+
+  <!-- THEME SELECTION CARDS -->
+  <g transform="translate(24, 112)">
+    <rect width="752" height="480" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="28" y="42" class="txt-dark" font-size="18" font-weight="900">🎨 APPLICATION THEME &amp; PALETTE</text>
+
+    <!-- Theme 1: Ocean Blue -->
+    <g transform="translate(28, 64)">
+      <rect width="696" height="120" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+      <text x="24" y="38" class="txt-dark" font-size="18" font-weight="900">Ocean Blue</text>
+      <text x="24" y="68" class="txt-sub" font-size="14">Light blue-grey background with navy, cyan &amp; teal urban accents.</text>
+
+      <circle cx="580" cy="48" r="16" fill="#1e293b"/>
+      <circle cx="616" cy="48" r="16" fill="#0284c7"/>
+      <circle cx="652" cy="48" r="16" fill="#06b6d4"/>
+
+      <rect x="24" y="80" width="120" height="28" rx="14" fill="#e0f2fe"/>
+      <text x="36" y="99" fill="#0369a1" font-family="sans-serif" font-size="12" font-weight="800">Select Theme</text>
+    </g>
+
+    <!-- Theme 2: Desert Sunrise (Active) -->
+    <g transform="translate(28, 200)">
+      <rect width="696" height="120" rx="20" fill="#f0fdf4" stroke="#059669" stroke-width="2"/>
+      <text x="24" y="38" class="txt-dark" font-size="18" font-weight="900">Desert Sunrise</text>
+      <text x="24" y="68" class="txt-sub" font-size="14">Warm ivory background with sand, amber &amp; green environmental tones.</text>
+
+      <circle cx="580" cy="48" r="16" fill="#059669"/>
+      <circle cx="616" cy="48" r="16" fill="#f59e0b"/>
+      <circle cx="652" cy="48" r="16" fill="#10b981"/>
+
+      <rect x="24" y="80" width="120" height="28" rx="14" fill="#059669"/>
+      <text x="48" y="99" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="800">✓ Active</text>
+    </g>
+
+    <!-- Theme 3: System Default -->
+    <g transform="translate(28, 336)">
+      <rect width="696" height="120" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+      <text x="24" y="38" class="txt-dark" font-size="18" font-weight="900">System Default</text>
+      <text x="24" y="68" class="txt-sub" font-size="14">Automatically follow your device light or dark appearance setting.</text>
+
+      <circle cx="580" cy="48" r="16" fill="#0f172a"/>
+      <circle cx="616" cy="48" r="16" fill="#64748b"/>
+      <circle cx="652" cy="48" r="16" fill="#cbd5e1"/>
+
+      <rect x="24" y="80" width="120" height="28" rx="14" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="36" y="99" class="txt-dark" font-size="12" font-weight="700">Select Theme</text>
+    </g>
+  </g>
+
+  <!-- SAVED MOBILITY PREFERENCES CARD -->
+  <g transform="translate(24, 612)">
+    <rect width="752" height="420" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="28" y="42" class="txt-dark" font-size="18" font-weight="900">⚙ SAVED MOBILITY PREFERENCES</text>
+
+    <!-- Priority Selector Tabs -->
+    <text x="28" y="82" class="txt-muted" font-size="14">Default Journey Priority:</text>
+
+    <rect x="28" y="96" width="150" height="40" rx="20" fill="#059669"/>
+    <text x="103" y="121" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">🌿 Greenest</text>
+
+    <rect x="194" y="96" width="150" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="269" y="121" class="txt-dark" font-size="14" text-anchor="middle">⚖️ Balanced</text>
+
+    <rect x="360" y="96" width="150" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="435" y="121" class="txt-dark" font-size="14" text-anchor="middle">⚡ Fastest</text>
+
+    <!-- Checkbox Toggles List -->
+    <g transform="translate(28, 160)">
+      <!-- Item 1 -->
+      <rect width="696" height="64" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <rect x="20" y="18" width="28" height="28" rx="8" fill="#059669"/>
+      <text x="27" y="38" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="900">✓</text>
+      <text x="64" y="38" class="txt-dark" font-size="16" font-weight="800">👣 Default to Reduced Walking</text>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 80)">
+        <rect width="696" height="64" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="28" height="28" rx="8" fill="#059669"/>
+        <text x="27" y="38" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="900">✓</text>
+        <text x="64" y="38" class="txt-dark" font-size="16" font-weight="800">♿ Default to Step-Free / Wheelchair Routes</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 160)">
+        <rect width="696" height="64" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="20" y="18" width="28" height="28" rx="8" fill="#059669"/>
+        <text x="27" y="38" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="900">✓</text>
+        <text x="64" y="38" class="txt-dark" font-size="16" font-weight="800">☀️ Default to Lower Heat Exposure Pathways</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ACCORDION INFORMATION -->
+  <g transform="translate(24, 1052)">
+    <rect width="752" height="320" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <g transform="translate(28, 20)">
+      <rect width="696" height="70" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="24" y="42" class="txt-dark" font-size="16" font-weight="900">ℹ️ About GreenRoute AI</text>
+      <text x="650" y="42" class="txt-muted" font-size="18">❯</text>
+    </g>
+
+    <g transform="translate(28, 104)">
+      <rect width="696" height="70" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="24" y="42" class="txt-dark" font-size="16" font-weight="900">📐 Methodology &amp; Carbon Footprint Factors</text>
+      <text x="650" y="42" class="txt-muted" font-size="18">❯</text>
+    </g>
+
+    <g transform="translate(28, 188)">
+      <rect width="696" height="70" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="24" y="42" class="txt-dark" font-size="16" font-weight="900">🔒 Data &amp; Privacy Statement</text>
+      <text x="650" y="42" class="txt-muted" font-size="18">❯</text>
+    </g>
+  </g>
+
+  <!-- DISCLAIMER BOX -->
+  <g transform="translate(24, 1392)">
+    <rect width="752" height="90" rx="20" fill="#fffbebe6" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="28" y="36" fill="#b45309" font-family="sans-serif" font-size="13" font-weight="900">ℹ️ DEMONSTRATION PROTOTYPE NOTICE</text>
+    <text x="28" y="60" class="txt-sub" font-size="13">Independent proof of concept. Journey, fare and emissions information is estimated using demonstration data.</text>
+  </g>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <g transform="translate(0, 1640)">
+    <rect width="800" height="120" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+
+    <g transform="translate(40, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">🚀</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Plan</text>
+    </g>
+
+    <g transform="translate(240, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">🔀</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Compare</text>
+    </g>
+
+    <g transform="translate(440, 0)">
+      <circle cx="82" cy="24" r="10" fill="#059669"/>
+      <text x="82" y="31" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">3</text>
+      <text x="60" y="48" font-size="28" text-anchor="middle">📊</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Impact</text>
+    </g>
+
+    <!-- Profile Tab (Active) -->
+    <rect x="616" y="12" width="148" height="80" rx="20" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="690" y="48" font-size="28" text-anchor="middle">👤</text>
+    <text x="690" y="76" class="txt-green" font-size="15" text-anchor="middle">Profile</text>
+  </g>
+
+</svg>

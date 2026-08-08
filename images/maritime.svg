@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#050a18" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090e1a" />
+    </linearGradient>
+
+    <linearGradient id="glowCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="areaGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="areaCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+
+  <!-- Sidebar Nav -->
+  <rect x="0" y="0" width="220" height="900" fill="#060b14" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Logo Header -->
+  <circle cx="38" cy="42" r="16" fill="#0284c7" filter="url(#glow)"/>
+  <path d="M 38 32 L 38 52 M 30 42 L 46 42 M 33 50 Q 38 55 43 50" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="64" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13" letter-spacing="1">MARITIME AI</text>
+  <text x="64" y="50" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700" letter-spacing="0.5">OPERATIONS CONTROL TOWER</text>
+
+  <!-- Navigation Items -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">
+    <!-- Active Item: Executive Dashboard -->
+    <rect x="10" y="80" width="200" height="36" rx="8" fill="#0c2a4a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="42" y="103" fill="#38bdf8" font-weight="800">Executive Dashboard</text>
+    
+    <text x="42" y="153" fill="#94a3b8">Fleet Overview</text>
+    <text x="42" y="203" fill="#94a3b8">Anomaly Detection <tspan fill="#ef4444" font-weight="800">(2)</tspan></text>
+    <text x="42" y="253" fill="#94a3b8">Predictive Maintenance <tspan fill="#f59e0b" font-weight="800">(5)</tspan></text>
+    <text x="42" y="303" fill="#94a3b8">Voyage &amp; Fuel Optimisation</text>
+    <text x="42" y="353" fill="#94a3b8">Safety Monitoring <tspan fill="#0ea5e9" font-weight="800">(10)</tspan></text>
+    <text x="42" y="403" fill="#94a3b8">Automation Centre</text>
+    <text x="42" y="453" fill="#94a3b8">Staging Admin</text>
+  </g>
+
+  <!-- Main Top Bar -->
+  <text x="250" y="35" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="1.5">EXECUTIVE OPERATIONS DASHBOARD</text>
+  <text x="250" y="65" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="900" letter-spacing="-0.5">Maritime Operations Control Tower</text>
+  <rect x="690" y="48" width="120" height="22" rx="11" fill="#065f46" stroke="#10b981"/>
+  <text x="702" y="63" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="800">Live Stream Connected</text>
+
+  <!-- TOP KPI CARDS (6 metrics) -->
+  <g font-family="sans-serif">
+    <!-- Metric 1: Active Vessels -->
+    <rect x="250" y="85" width="200" height="70" rx="10" fill="#0d1829" stroke="#1e293b"/>
+    <text x="268" y="125" fill="#ffffff" font-size="28" font-weight="900">4</text>
+    <text x="268" y="142" fill="#94a3b8" font-size="10" font-weight="600">Active vessels</text>
+    <rect x="390" y="98" width="45" height="18" rx="9" fill="#065f46"/>
+    <text x="402" y="111" fill="#34d399" font-size="9" font-weight="800">LIVE</text>
+
+    <!-- Metric 2: Critical Alerts -->
+    <rect x="462" y="85" width="200" height="70" rx="10" fill="#0d1829" stroke="#1e293b"/>
+    <text x="480" y="125" fill="#ffffff" font-size="28" font-weight="900">2</text>
+    <text x="480" y="142" fill="#94a3b8" font-size="10" font-weight="600">Critical alerts</text>
+    <rect x="602" y="98" width="45" height="18" rx="9" fill="#7f1d1d"/>
+    <text x="614" y="111" fill="#fca5a5" font-size="9" font-weight="800">LIVE</text>
+
+    <!-- Metric 3: Predicted Failures -->
+    <rect x="674" y="85" width="200" height="70" rx="10" fill="#0d1829" stroke="#1e293b"/>
+    <text x="692" y="125" fill="#ffffff" font-size="28" font-weight="900">5</text>
+    <text x="692" y="142" fill="#94a3b8" font-size="10" font-weight="600">Predicted failures (30d)</text>
+    <rect x="814" y="98" width="45" height="18" rx="9" fill="#78350f"/>
+    <text x="826" y="111" fill="#fcd34d" font-size="9" font-weight="800">LIVE</text>
+
+    <!-- Metric 4: Delayed Voyages -->
+    <rect x="886" y="85" width="200" height="70" rx="10" fill="#0d1829" stroke="#1e293b"/>
+    <text x="904" y="125" fill="#ffffff" font-size="28" font-weight="900">3</text>
+    <text x="904" y="142" fill="#94a3b8" font-size="10" font-weight="600">Delayed voyages</text>
+    <rect x="1026" y="98" width="45" height="18" rx="9" fill="#1e3a8a"/>
+    <text x="1038" y="111" fill="#93c5fd" font-size="9" font-weight="800">LIVE</text>
+
+    <!-- Metric 5: Fuel Saving -->
+    <rect x="1098" y="85" width="200" height="70" rx="10" fill="#0d1829" stroke="#1e293b"/>
+    <text x="1116" y="125" fill="#38bdf8" font-size="28" font-weight="900">5.9%</text>
+    <text x="1116" y="142" fill="#94a3b8" font-size="10" font-weight="600">Potential fuel saving</text>
+    <rect x="1238" y="98" width="45" height="18" rx="9" fill="#065f46"/>
+    <text x="1250" y="111" fill="#34d399" font-size="9" font-weight="800">LIVE</text>
+
+    <!-- Metric 6: High-risk safety -->
+    <rect x="1310" y="85" width="240" height="70" rx="10" fill="#0d1829" stroke="#1e293b"/>
+    <text x="1328" y="125" fill="#ffffff" font-size="28" font-weight="900">10</text>
+    <text x="1328" y="142" fill="#94a3b8" font-size="10" font-weight="600">Open high-risk safety</text>
+    <rect x="1490" y="98" width="45" height="18" rx="9" fill="#312e81"/>
+    <text x="1502" y="111" fill="#c084fc" font-size="9" font-weight="800">LIVE</text>
+  </g>
+
+  <!-- MIDDLE ROW: MAP & FLEET STATUS TABLE -->
+  <!-- Map Panel -->
+  <g font-family="sans-serif">
+    <rect x="250" y="170" width="480" height="280" rx="12" fill="#0a101d" stroke="#1e293b"/>
+    <text x="268" y="195" fill="#94a3b8" font-size="10" font-weight="800" letter-spacing="1">LIVE OPERATIONAL PICTURE</text>
+    <text x="640" y="195" fill="#38bdf8" font-size="10" font-weight="700">6 Vessels Tracked</text>
+
+    <!-- Map Graphic Representation -->
+    <rect x="265" y="210" width="450" height="225" rx="8" fill="#080e18"/>
+    <!-- Landmass Outlines -->
+    <path d="M 270 260 Q 310 240 360 270 T 420 310 T 480 290 Q 550 320 620 280 T 700 330" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="4,4"/>
+    <path d="M 300 280 Q 350 290 380 340 T 450 370 Q 520 390 600 360" fill="#0f1d33" opacity="0.6"/>
+    <!-- Vessel Dots on Map -->
+    <circle cx="480" cy="330" r="7" fill="#10b981" filter="url(#glow)"/>
+    <circle cx="560" cy="280" r="7" fill="#38bdf8" filter="url(#glow)"/>
+    <circle cx="380" cy="290" r="7" fill="#f59e0b" filter="url(#glow)"/>
+    <circle cx="620" cy="350" r="7" fill="#ef4444" filter="url(#glow)"/>
+
+    <rect x="275" y="220" width="22" height="42" rx="4" fill="#0d1829" stroke="#334155"/>
+    <text x="281" y="238" fill="#ffffff" font-size="14" font-weight="700">+</text>
+    <text x="282" y="255" fill="#ffffff" font-size="14" font-weight="700">-</text>
+  </g>
+
+  <!-- Fleet Status Table -->
+  <g font-family="sans-serif">
+    <rect x="745" y="170" width="805" height="280" rx="12" fill="#0a101d" stroke="#1e293b"/>
+    <text x="765" y="195" fill="#94a3b8" font-size="10" font-weight="800" letter-spacing="1">FLEET STATUS</text>
+    <text x="1440" y="195" fill="#38bdf8" font-size="11" font-weight="700">Full Fleet Directory ›</text>
+
+    <!-- Table Header -->
+    <rect x="760" y="210" width="775" height="28" fill="#0d172a" rx="6"/>
+    <text x="775" y="228" fill="#64748b" font-size="10" font-weight="700">VESSEL</text>
+    <text x="910" y="228" fill="#64748b" font-size="10" font-weight="700">TYPE</text>
+    <text x="990" y="228" fill="#64748b" font-size="10" font-weight="700">STATUS</text>
+    <text x="1080" y="228" fill="#64748b" font-size="10" font-weight="700">LOCATION</text>
+    <text x="1190" y="228" fill="#64748b" font-size="10" font-weight="700">DESTINATION</text>
+    <text x="1350" y="228" fill="#64748b" font-size="10" font-weight="700">FUEL PERFORMANCE</text>
+
+    <!-- Rows -->
+    <!-- Row 1 -->
+    <text x="775" y="258" fill="#ffffff" font-size="11" font-weight="800">MV Pacific Pioneer</text>
+    <text x="910" y="258" fill="#94a3b8" font-size="10">Container</text>
+    <rect x="990" y="246" width="60" height="18" rx="4" fill="#0284c7"/>
+    <text x="1002" y="259" fill="#ffffff" font-size="9" font-weight="700">Underway</text>
+    <text x="1080" y="258" fill="#94a3b8" font-size="10">-</text>
+    <text x="1190" y="258" fill="#e0f2fe" font-size="10" font-weight="600">Singapore (SGSIN)</text>
+    <rect x="1350" y="251" width="120" height="8" rx="4" fill="#1e293b"/>
+    <rect x="1350" y="251" width="95" height="8" rx="4" fill="#10b981"/>
+
+    <!-- Row 2 -->
+    <text x="775" y="293" fill="#ffffff" font-size="11" font-weight="800">Atlantic Guardian</text>
+    <text x="910" y="293" fill="#94a3b8" font-size="10">LNG Carrier</text>
+    <rect x="990" y="281" width="60" height="18" rx="4" fill="#0284c7"/>
+    <text x="1002" y="294" fill="#ffffff" font-size="9" font-weight="700">Underway</text>
+    <text x="1080" y="293" fill="#94a3b8" font-size="10">-</text>
+    <text x="1190" y="293" fill="#e0f2fe" font-size="10" font-weight="600">Rotterdam (NLRTM)</text>
+    <rect x="1350" y="286" width="120" height="8" rx="4" fill="#1e293b"/>
+    <rect x="1350" y="286" width="80" height="8" rx="4" fill="#38bdf8"/>
+
+    <!-- Row 3 -->
+    <text x="775" y="328" fill="#ffffff" font-size="11" font-weight="800">Nordic Titan</text>
+    <text x="910" y="328" fill="#94a3b8" font-size="10">Bulk Carrier</text>
+    <rect x="990" y="316" width="60" height="18" rx="4" fill="#334155"/>
+    <text x="1000" y="329" fill="#cbd5e1" font-size="9" font-weight="700">At Anchor</text>
+    <text x="1080" y="328" fill="#94a3b8" font-size="10">-</text>
+    <text x="1190" y="328" fill="#e0f2fe" font-size="10" font-weight="600">Port Hedland (AUPHE)</text>
+    <rect x="1350" y="321" width="120" height="8" rx="4" fill="#1e293b"/>
+    <rect x="1350" y="321" width="110" height="8" rx="4" fill="#10b981"/>
+
+    <!-- Row 4 -->
+    <text x="775" y="363" fill="#ffffff" font-size="11" font-weight="800">Poseidon Express</text>
+    <text x="910" y="363" fill="#94a3b8" font-size="10">Container</text>
+    <rect x="990" y="351" width="60" height="18" rx="4" fill="#0284c7"/>
+    <text x="1002" y="364" fill="#ffffff" font-size="9" font-weight="700">Underway</text>
+    <text x="1080" y="363" fill="#94a3b8" font-size="10">-</text>
+    <text x="1190" y="363" fill="#e0f2fe" font-size="10" font-weight="600">Los Angeles (USLAX)</text>
+    <rect x="1350" y="356" width="120" height="8" rx="4" fill="#1e293b"/>
+    <rect x="1350" y="356" width="60" height="8" rx="4" fill="#f59e0b"/>
+
+    <!-- Row 5 -->
+    <text x="775" y="398" fill="#ffffff" font-size="11" font-weight="800">Helios Crude</text>
+    <text x="910" y="398" fill="#94a3b8" font-size="10">Tanker</text>
+    <rect x="990" y="386" width="60" height="18" rx="4" fill="#1e293b"/>
+    <text x="1006" y="399" fill="#94a3b8" font-size="9" font-weight="700">Moored</text>
+    <text x="1080" y="398" fill="#94a3b8" font-size="10">-</text>
+    <text x="1190" y="398" fill="#e0f2fe" font-size="10" font-weight="600">Fujairah Anchorage (AEFUJ)</text>
+    <rect x="1350" y="391" width="120" height="8" rx="4" fill="#1e293b"/>
+    <rect x="1350" y="391" width="105" height="8" rx="4" fill="#10b981"/>
+  </g>
+
+  <!-- LOWER ROW: ANALYTICS & CHARTS -->
+  <!-- Chart 1: Time Series Bunker Fuel Mix -->
+  <g font-family="sans-serif">
+    <rect x="250" y="465" width="640" height="200" rx="12" fill="#0a101d" stroke="#1e293b"/>
+    <text x="268" y="490" fill="#38bdf8" font-size="9" font-weight="800" letter-spacing="1">TIME-SERIES FLEET CONSUMPTION</text>
+    <text x="268" y="510" fill="#ffffff" font-size="13" font-weight="800">Bunker Fuel Mix (Tons/Day) &amp; CO2 Emissions Output (MT)</text>
+    <rect x="760" y="485" width="115" height="22" rx="11" fill="#065f46"/>
+    <text x="772" y="500" fill="#34d399" font-size="10" font-weight="800">-11.4% CO2 Reduction</text>
+
+    <!-- Graph Area -->
+    <path d="M 280 620 C 350 540, 450 560, 520 530 C 600 500, 720 540, 860 520 L 860 630 L 280 630 Z" fill="url(#areaCyan)" />
+    <path d="M 280 620 C 350 540, 450 560, 520 530 C 600 500, 720 540, 860 520" fill="none" stroke="#38bdf8" stroke-width="3" filter="url(#glow)"/>
+    <path d="M 280 625 C 380 580, 500 610, 620 570 C 700 550, 780 590, 860 560" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <path d="M 280 630 C 380 600, 500 620, 620 595 C 700 580, 780 610, 860 585" fill="none" stroke="#10b981" stroke-width="2"/>
+  </g>
+
+  <!-- Chart 2: CII Rating Distribution -->
+  <g font-family="sans-serif">
+    <rect x="905" y="465" width="645" height="200" rx="12" fill="#0a101d" stroke="#1e293b"/>
+    <text x="923" y="490" fill="#38bdf8" font-size="9" font-weight="800" letter-spacing="1">IMO ENVIRONMENTAL COMPLIANCE</text>
+    <text x="923" y="510" fill="#ffffff" font-size="13" font-weight="800">CII Rating Distribution by Vessel Class</text>
+    <rect x="1420" y="485" width="115" height="22" rx="11" fill="#1e3a8a"/>
+    <text x="1432" y="500" fill="#93c5fd" font-size="10" font-weight="800">Class A-E Scores</text>
+
+    <!-- Bar chart columns -->
+    <rect x="960" y="530" width="70" height="100" rx="4" fill="#38bdf8"/>
+    <rect x="960" y="530" width="70" height="25" rx="4" fill="#10b981"/>
+    
+    <rect x="1070" y="545" width="70" height="85" rx="4" fill="#38bdf8"/>
+    <rect x="1070" y="545" width="70" height="30" rx="4" fill="#f59e0b"/>
+
+    <rect x="1180" y="560" width="70" height="70" rx="4" fill="#38bdf8"/>
+    <rect x="1180" y="560" width="70" height="20" rx="4" fill="#10b981"/>
+
+    <rect x="1290" y="570" width="70" height="60" rx="4" fill="#38bdf8"/>
+    <rect x="1290" y="570" width="70" height="15" rx="4" fill="#ef4444"/>
+
+    <!-- Labels -->
+    <text x="965" y="645" fill="#94a3b8" font-size="9">Container Vessel</text>
+    <text x="1090" y="645" fill="#94a3b8" font-size="9">Tanker</text>
+    <text x="1195" y="645" fill="#94a3b8" font-size="9">Bulk Carrier</text>
+    <text x="1305" y="645" fill="#94a3b8" font-size="9">Tug / OSV</text>
+  </g>
+
+  <!-- BOTTOM ROW: VIBRATION, SPEED, AND ALERTS -->
+  <!-- Chart 3: Speed vs Fuel -->
+  <g font-family="sans-serif">
+    <rect x="250" y="680" width="400" height="200" rx="12" fill="#0a101d" stroke="#1e293b"/>
+    <text x="268" y="702" fill="#f59e0b" font-size="9" font-weight="800" letter-spacing="1">HYDRODYNAMIC VOYAGE MODELING</text>
+    <text x="268" y="720" fill="#ffffff" font-size="12" font-weight="800">Cruising Speed vs. Fuel Consumption</text>
+
+    <path d="M 280 840 Q 420 830 610 750" fill="none" stroke="#38bdf8" stroke-width="3" filter="url(#glow)"/>
+    <path d="M 280 850 Q 420 840 610 770" fill="none" stroke="#10b981" stroke-width="2.5"/>
+    <path d="M 280 860 Q 420 850 610 790" fill="none" stroke="#a855f7" stroke-width="2.5"/>
+  </g>
+
+  <!-- Chart 4: Engine Room Vibration FFT -->
+  <g font-family="sans-serif">
+    <rect x="665" y="680" width="420" height="200" rx="12" fill="#0a101d" stroke="#1e293b"/>
+    <text x="683" y="702" fill="#ef4444" font-size="9" font-weight="800" letter-spacing="1">PREDICTIVE MACHINERY SENSORS</text>
+    <text x="683" y="720" fill="#ffffff" font-size="12" font-weight="800">Engine Room Vibration Spectrum (18.2 Hz)</text>
+    
+    <path d="M 695 830 Q 740 830 770 750 Q 800 830 1060 830" fill="none" stroke="#ef4444" stroke-width="3" filter="url(#glow)"/>
+    <line x1="695" y1="800" x2="1060" y2="800" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- Chart 5: Alert Donut -->
+  <g font-family="sans-serif">
+    <rect x="1100" y="680" width="450" height="200" rx="12" fill="#0a101d" stroke="#1e293b"/>
+    <text x="1118" y="702" fill="#38bdf8" font-size="9" font-weight="800" letter-spacing="1">ALERT DISTRIBUTION BREAKDOWN</text>
+    <text x="1118" y="720" fill="#ffffff" font-size="12" font-weight="800">Active Safety &amp; Telemetry Alert Types</text>
+
+    <!-- Donut Chart Circle -->
+    <circle cx="1220" cy="800" r="48" fill="none" stroke="#0284c7" stroke-width="18"/>
+    <circle cx="1220" cy="800" r="48" fill="none" stroke="#10b981" stroke-width="18" stroke-dasharray="80 300" stroke-dashoffset="-60"/>
+    <circle cx="1220" cy="800" r="48" fill="none" stroke="#a855f7" stroke-width="18" stroke-dasharray="50 300" stroke-dashoffset="-140"/>
+    <circle cx="1220" cy="800" r="48" fill="none" stroke="#ef4444" stroke-width="18" stroke-dasharray="40 300" stroke-dashoffset="-200"/>
+
+    <text x="1310" y="760" fill="#38bdf8" font-size="11" font-weight="700">AIS Security &amp; Navigation (12)</text>
+    <text x="1310" y="785" fill="#34d399" font-size="11" font-weight="700">Engine Telemetry (18)</text>
+    <text x="1310" y="810" fill="#c084fc" font-size="11" font-weight="700">HSE &amp; Deck Safety (14)</text>
+    <text x="1310" y="835" fill="#fca5a5" font-size="11" font-weight="700">CII Emission Excursion (8)</text>
+  </g>
+</svg>

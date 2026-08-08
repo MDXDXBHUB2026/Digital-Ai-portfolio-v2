@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+    
+  <defs>
+    <!-- Light Colorful Background Gradient -->
+    <linearGradient id="elecBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="40%" stop-color="#f0f4fd" />
+      <stop offset="70%" stop-color="#edf2ff" />
+      <stop offset="100%" stop-color="#f5f3ff" />
+    </linearGradient>
+
+    <!-- Colorful Brand Gradients -->
+    <linearGradient id="cyanBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+
+    <linearGradient id="violetRoseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+
+    <linearGradient id="amberGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Glass Card Gradient -->
+    <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="glassInnerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.06" />
+    </linearGradient>
+
+    <!-- Soft Diffuse Shadows -->
+    <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+
+    <filter id="colorfulGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap');
+    * { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    .font-serif { font-family: 'Cinzel', Georgia, serif; }
+  </style>
+
+    <rect width="1600" height="900" fill="url(#elecBgGrad)" />
+
+    <!-- Vibrant Light Ambient Mesh Glows -->
+    <g opacity="0.6">
+      <circle cx="250" cy="180" r="320" fill="#38bdf8" opacity="0.2" filter="url(#colorfulGlow)"/>
+      <circle cx="1350" cy="220" r="380" fill="#a7f3d0" opacity="0.25" filter="url(#colorfulGlow)"/>
+      <circle cx="800" cy="650" r="450" fill="#c084fc" opacity="0.18" filter="url(#colorfulGlow)"/>
+      <circle cx="1400" cy="750" r="300" fill="#fde047" opacity="0.2" filter="url(#colorfulGlow)"/>
+    </g>
+
+    
+    <!-- Top Header Bar -->
+    <rect x="0" y="0" width="1600" height="64" fill="#ffffff" fill-opacity="0.85" />
+    <line x1="0" y1="64" x2="1600" y2="64" stroke="rgba(226, 232, 240, 0.8)" stroke-width="1"/>
+
+    <!-- Brand Logo -->
+    <g transform="translate(40, 15)">
+      <rect x="0" y="0" width="34" height="34" rx="8" fill="url(#cyanBlueGrad)" />
+      <text x="12" y="24" class="font-serif" font-size="20" font-weight="900" fill="#ffffff">J</text>
+      <text x="44" y="18" class="font-serif" font-size="15" font-weight="900" fill="#0f172a" letter-spacing="1">JERMANN</text>
+      <text x="44" y="29" font-size="8" font-weight="800" fill="#0284c7" letter-spacing="1.2">ELECTRONICS • DIGITAL COMMERCE</text>
+    </g>
+
+    
+        <rect x="382" y="18" width="64" height="28" rx="8" fill="url(#cyanBlueGrad)" fill-opacity="0.12" stroke="#0284c7" stroke-opacity="0.4" />
+        <text x="390" y="36" fill="#0284c7" font-size="11" font-weight="800" letter-spacing="0.5">STORE</text>
+      
+        <text x="462" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">CATALOG</text>
+      
+        <text x="550" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">FLAGSHIP X1</text>
+      
+        <text x="670" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">AUDIO &amp; SOUND</text>
+      
+        <text x="838" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">SMART HOME</text>
+      
+        <text x="950" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">CART (3)</text>
+      
+        <text x="1046" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">SUPPORT</text>
+      
+
+    <!-- Search & Cart Action Buttons -->
+    <g transform="translate(1420, 15)">
+      <rect x="0" y="0" width="140" height="34" rx="8" fill="url(#cyanBlueGrad)" />
+      <text x="22" y="21" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="0.5">SHOP NOW →</text>
+    </g>
+  
+
+    <!-- Hero Banner Display -->
+    <g transform="translate(80, 95)">
+      <!-- Main Glass Box -->
+      <rect width="1440" height="330" rx="24" fill="url(#glassCardGrad)" stroke="rgba(255, 255, 255, 0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+      <rect width="1440" height="330" rx="24" fill="url(#glassInnerGrad)"/>
+
+      <g transform="translate(60, 48)">
+        <rect width="170" height="26" rx="8" fill="#0284c7" fill-opacity="0.1" stroke="#0284c7" stroke-opacity="0.3"/>
+        <text x="14" y="17" font-size="10" font-weight="900" fill="#0284c7" letter-spacing="1">● FLAGSHIP RELEASE 2026</text>
+
+        <text x="0" y="78" class="font-serif" font-size="38" font-weight="900" fill="#0f172a" letter-spacing="1">JERMANN X1 ULTRA SOUNDSTAGE</text>
+        <text x="0" y="114" font-size="14" font-weight="500" fill="#475569" text-anchor="start"><tspan x="0" >Acoustic perfection engineered with dual spatial neural chips,</tspan><tspan x="0" dy="22">ultra-lossless wireless architecture, and ergonomic aerospace</tspan><tspan x="0" dy="22">beryllium cups.</tspan></text>
+
+        <!-- Quick Specs Badges -->
+        <g transform="translate(0, 168)">
+          <rect x="0" y="0" width="130" height="28" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="12" y="18" font-size="11" font-weight="700" fill="#2563eb">⚡ 96kHz Lossless</text>
+
+          <rect x="142" y="0" width="130" height="28" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="154" y="18" font-size="11" font-weight="700" fill="#0d9488">🔋 48h GaN Charge</text>
+
+          <rect x="284" y="0" width="130" height="28" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="296" y="18" font-size="11" font-weight="700" fill="#7c3aed">🎧 -48dB Active ANC</text>
+        </g>
+
+        <g transform="translate(0, 218)">
+          <rect width="190" height="44" rx="12" fill="url(#cyanBlueGrad)"/>
+          <text x="28" y="27" font-size="12" font-weight="900" fill="#ffffff" letter-spacing="0.5">EXPLORE SPECS — AED 1,899</text>
+
+          <rect x="206" y="0" width="150" height="44" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="238" y="27" font-size="12" font-weight="700" fill="#0f172a">ADD TO CART</text>
+        </g>
+      </g>
+
+      <!-- Headphone Graphic Visualizer Stage -->
+      <g transform="translate(1080, 165)">
+        <circle cx="0" cy="0" r="120" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 6" opacity="0.6"/>
+        <circle cx="0" cy="0" r="95" fill="#ffffff" stroke="#0284c7" stroke-width="3" filter="url(#glassShadow)"/>
+        <path d="M-50 -20 C-50 -65, 50 -65, 50 -20" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+        <rect x="-70" y="-20" width="32" height="60" rx="12" fill="url(#cyanBlueGrad)"/>
+        <rect x="38" y="-20" width="32" height="60" rx="12" fill="url(#cyanBlueGrad)"/>
+
+        <!-- Waveform Spectrum -->
+        <path d="M-80 65 L-60 50 L-40 70 L-20 40 L0 75 L20 45 L40 68 L60 52 L80 65" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+        <text x="0" y="98" font-size="12" font-weight="800" fill="#0284c7" text-anchor="middle">JERMANN X1 PRO ACOUSTIC ENGINE</text>
+      </g>
+    </g>
+
+    <!-- Product Grid Section -->
+    <g transform="translate(80, 455)">
+      <text x="0" y="0" font-size="18" font-weight="900" fill="#0f172a" letter-spacing="0.5">FEATURED NEXT-GEN ELECTRONICS</text>
+      <text x="1440" y="0" font-size="12" font-weight="800" fill="#0284c7" text-anchor="end">VIEW ALL CATEGORIES →</text>
+
+      <!-- 4 Cards Row -->
+      <!-- Card 1 -->
+      <g transform="translate(0, 22)">
+        <rect width="335" height="360" rx="20" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+        <rect x="16" y="16" width="303" height="175" rx="14" fill="#f1f5f9"/>
+        <circle cx="167" cy="103" r="48" fill="#38bdf8" fill-opacity="0.15"/>
+        <text x="167" y="112" font-size="38" text-anchor="middle">🎧</text>
+        <text x="24" y="222" font-size="15" font-weight="800" fill="#0f172a">Jermann SoundStage X1</text>
+        <text x="24" y="242" font-size="11" font-weight="500" fill="#64748b">Active AI Spatial Audio • 48hr Battery</text>
+        <text x="24" y="285" font-size="18" font-weight="900" fill="#0284c7">AED 1,899.00</text>
+        <rect x="200" y="260" width="115" height="36" rx="10" fill="url(#cyanBlueGrad)"/>
+        <text x="228" y="283" font-size="11" font-weight="800" fill="#ffffff">BUY NOW</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(368, 22)">
+        <rect width="335" height="360" rx="20" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+        <rect x="16" y="16" width="303" height="175" rx="14" fill="#f1f5f9"/>
+        <circle cx="167" cy="103" r="48" fill="#f59e0b" fill-opacity="0.15"/>
+        <text x="167" y="112" font-size="38" text-anchor="middle">💻</text>
+        <text x="24" y="222" font-size="15" font-weight="800" fill="#0f172a">Jermann Book Pro M16</text>
+        <text x="24" y="242" font-size="11" font-weight="500" fill="#64748b">Quantum Core i9 • 64GB DDR5 • 4K OLED</text>
+        <text x="24" y="285" font-size="18" font-weight="900" fill="#d97706">AED 9,450.00</text>
+        <rect x="200" y="260" width="115" height="36" rx="10" fill="url(#amberGoldGrad)"/>
+        <text x="228" y="283" font-size="11" font-weight="800" fill="#ffffff">BUY NOW</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(736, 22)">
+        <rect width="335" height="360" rx="20" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+        <rect x="16" y="16" width="303" height="175" rx="14" fill="#f1f5f9"/>
+        <circle cx="167" cy="103" r="48" fill="#7c3aed" fill-opacity="0.15"/>
+        <text x="167" y="112" font-size="38" text-anchor="middle">⌚</text>
+        <text x="24" y="222" font-size="15" font-weight="800" fill="#0f172a">Jermann Horizon Watch v3</text>
+        <text x="24" y="242" font-size="11" font-weight="500" fill="#64748b">Titanium Sapphire Case • Biometric AI</text>
+        <text x="24" y="285" font-size="18" font-weight="900" fill="#7c3aed">AED 2,499.00</text>
+        <rect x="200" y="260" width="115" height="36" rx="10" fill="url(#violetRoseGrad)"/>
+        <text x="228" y="283" font-size="11" font-weight="800" fill="#ffffff">BUY NOW</text>
+      </g>
+
+      <!-- Card 4 -->
+      <g transform="translate(1104, 22)">
+        <rect width="335" height="360" rx="20" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+        <rect x="16" y="16" width="303" height="175" rx="14" fill="#f1f5f9"/>
+        <circle cx="167" cy="103" r="48" fill="#10b981" fill-opacity="0.15"/>
+        <text x="167" y="112" font-size="38" text-anchor="middle">📱</text>
+        <text x="24" y="222" font-size="15" font-weight="800" fill="#0f172a">Jermann Phone Ultra 15</text>
+        <text x="24" y="242" font-size="11" font-weight="500" fill="#64748b">Ceramic Armor • 200MP Quad Camera</text>
+        <text x="24" y="285" font-size="18" font-weight="900" fill="#0d9488">AED 4,899.00</text>
+        <rect x="200" y="260" width="115" height="36" rx="10" fill="#0d9488"/>
+        <text x="228" y="283" font-size="11" font-weight="800" fill="#ffffff">BUY NOW</text>
+      </g>
+    </g>
+  </svg>

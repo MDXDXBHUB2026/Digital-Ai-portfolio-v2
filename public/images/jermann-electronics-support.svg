@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+    
+  <defs>
+    <!-- Light Colorful Background Gradient -->
+    <linearGradient id="elecBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="40%" stop-color="#f0f4fd" />
+      <stop offset="70%" stop-color="#edf2ff" />
+      <stop offset="100%" stop-color="#f5f3ff" />
+    </linearGradient>
+
+    <!-- Colorful Brand Gradients -->
+    <linearGradient id="cyanBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+
+    <linearGradient id="violetRoseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+
+    <linearGradient id="amberGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Glass Card Gradient -->
+    <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="glassInnerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.06" />
+    </linearGradient>
+
+    <!-- Soft Diffuse Shadows -->
+    <filter id="glassShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+
+    <filter id="colorfulGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap');
+    * { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    .font-serif { font-family: 'Cinzel', Georgia, serif; }
+  </style>
+
+    <rect width="1600" height="900" fill="url(#elecBgGrad)" />
+
+    <!-- Ambient Colorful Glows -->
+    <g opacity="0.5">
+      <circle cx="250" cy="250" r="320" fill="#38bdf8" opacity="0.2" filter="url(#colorfulGlow)"/>
+      <circle cx="1350" cy="350" r="380" fill="#c084fc" opacity="0.2" filter="url(#colorfulGlow)"/>
+    </g>
+
+    
+    <!-- Top Header Bar -->
+    <rect x="0" y="0" width="1600" height="64" fill="#ffffff" fill-opacity="0.85" />
+    <line x1="0" y1="64" x2="1600" y2="64" stroke="rgba(226, 232, 240, 0.8)" stroke-width="1"/>
+
+    <!-- Brand Logo -->
+    <g transform="translate(40, 15)">
+      <rect x="0" y="0" width="34" height="34" rx="8" fill="url(#cyanBlueGrad)" />
+      <text x="12" y="24" class="font-serif" font-size="20" font-weight="900" fill="#ffffff">J</text>
+      <text x="44" y="18" class="font-serif" font-size="15" font-weight="900" fill="#0f172a" letter-spacing="1">JERMANN</text>
+      <text x="44" y="29" font-size="8" font-weight="800" fill="#0284c7" letter-spacing="1.2">ELECTRONICS • DIGITAL COMMERCE</text>
+    </g>
+
+    
+        <text x="390" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">STORE</text>
+      
+        <text x="462" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">CATALOG</text>
+      
+        <text x="550" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">FLAGSHIP X1</text>
+      
+        <text x="670" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">AUDIO &amp; SOUND</text>
+      
+        <text x="838" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">SMART HOME</text>
+      
+        <text x="950" y="36" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">CART (3)</text>
+      
+        <rect x="1038" y="18" width="80" height="28" rx="8" fill="url(#cyanBlueGrad)" fill-opacity="0.12" stroke="#0284c7" stroke-opacity="0.4" />
+        <text x="1046" y="36" fill="#0284c7" font-size="11" font-weight="800" letter-spacing="0.5">SUPPORT</text>
+      
+
+    <!-- Search & Cart Action Buttons -->
+    <g transform="translate(1420, 15)">
+      <rect x="0" y="0" width="140" height="34" rx="8" fill="url(#cyanBlueGrad)" />
+      <text x="22" y="21" font-size="11" font-weight="800" fill="#ffffff" letter-spacing="0.5">SHOP NOW →</text>
+    </g>
+  
+
+    <g transform="translate(80, 85)">
+      <text x="0" y="24" font-size="24" font-weight="900" fill="#0f172a">JERMANN SMART CARE &amp; DIAGNOSTICS</text>
+      <text x="0" y="48" font-size="13" font-weight="500" fill="#64748b">Hardware telemetry, firmware updates, device warranty registration &amp; 24/7 executive concierge.</text>
+
+      <g transform="translate(0, 75)">
+        <!-- 3 Cards -->
+        <g transform="translate(0, 0)">
+          <rect width="460" height="630" rx="24" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+          <g transform="translate(30, 35)">
+            <rect width="48" height="48" rx="12" fill="#0284c7" fill-opacity="0.12"/>
+            <text x="12" y="32" font-size="24">🛠️</text>
+            <text x="0" y="82" font-size="18" font-weight="900" fill="#0f172a">Hardware Diagnostics</text>
+            <text x="0" y="112" font-size="12" font-weight="400" fill="#64748b" text-anchor="start"><tspan x="0" >Run instant battery health, acoustic</tspan><tspan x="0" dy="20">driver frequency checks, and bluetooth</tspan><tspan x="0" dy="20">connectivity telemetry for your registered</tspan><tspan x="0" dy="20">devices.</tspan></text>
+
+            <rect x="0" y="220" width="400" height="90" rx="14" fill="#f1f5f9"/>
+            <text x="20" y="252" font-size="13" font-weight="800" fill="#0284c7">Jermann SoundStage X1</text>
+            <text x="20" y="276" font-size="11" font-weight="600" fill="#0f172a">Firmware v2.4.1 Installed • Battery 98% Healthy</text>
+          </g>
+        </g>
+
+        <g transform="translate(490, 0)">
+          <rect width="460" height="630" rx="24" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+          <g transform="translate(30, 35)">
+            <rect width="48" height="48" rx="12" fill="#d97706" fill-opacity="0.12"/>
+            <text x="12" y="32" font-size="24">📋</text>
+            <text x="0" y="82" font-size="18" font-weight="900" fill="#0f172a">Warranty &amp; Registration</text>
+            <text x="0" y="112" font-size="12" font-weight="400" fill="#64748b" text-anchor="start"><tspan x="0" >Register new purchases, manage Jermann</tspan><tspan x="0" dy="20">Care coverage, request express hardware</tspan><tspan x="0" dy="20">replacement, or book an in-person</tspan><tspan x="0" dy="20">technician.</tspan></text>
+
+            <rect x="0" y="220" width="400" height="90" rx="14" fill="#f1f5f9"/>
+            <text x="20" y="252" font-size="13" font-weight="800" fill="#d97706">Jermann Care Active</text>
+            <text x="20" y="276" font-size="11" font-weight="600" fill="#0f172a">Coverage valid through August 2028</text>
+          </g>
+        </g>
+
+        <g transform="translate(980, 0)">
+          <rect width="460" height="630" rx="24" fill="url(#glassCardGrad)" stroke="rgba(255,255,255,0.95)" stroke-width="2" filter="url(#glassShadow)"/>
+          <g transform="translate(30, 35)">
+            <rect width="48" height="48" rx="12" fill="#7c3aed" fill-opacity="0.12"/>
+            <text x="12" y="32" font-size="24">💬</text>
+            <text x="0" y="82" font-size="18" font-weight="900" fill="#0f172a">24/7 Executive Support</text>
+            <text x="0" y="112" font-size="12" font-weight="400" fill="#64748b" text-anchor="start"><tspan x="0" >Direct messaging line with Jermann chief</tspan><tspan x="0" dy="20">audio engineers and hardware specialists</tspan><tspan x="0" dy="20">for enterprise setups &amp; custom</tspan><tspan x="0" dy="20">deployments.</tspan></text>
+
+            <rect x="0" y="220" width="400" height="52" rx="14" fill="url(#cyanBlueGrad)" filter="url(#glassShadow)"/>
+            <text x="200" y="252" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">START LIVE CHAT WITH ENGINEER</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>

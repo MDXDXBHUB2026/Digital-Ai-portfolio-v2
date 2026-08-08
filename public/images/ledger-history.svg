@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+    
+  <defs>
+    <linearGradient id="ledBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#090d1a" />
+      <stop offset="100%" stop-color="#04060d" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffe885" />
+      <stop offset="100%" stop-color="#ffd700" />
+    </linearGradient>
+
+    <linearGradient id="goldBtnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#ffb700" />
+    </linearGradient>
+
+    <linearGradient id="cardBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="phoneCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121a2d" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+
+    <filter id="ledShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap');
+    * { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    .txt-gold { fill: url(#goldGrad); font-weight: 800; }
+    .txt-white { fill: #ffffff; font-weight: 700; }
+    .txt-sub { fill: #94a3b8; font-size: 13px; font-weight: 500; }
+    .txt-muted { fill: #64748b; font-size: 11px; font-weight: 600; }
+  </style>
+
+    <rect width="1600" height="900" fill="url(#ledBgGrad)" />
+
+    <!-- LEFT PANEL -->
+    <g transform="translate(80, 100)">
+      <rect width="420" height="700" rx="20" fill="url(#cardBgGrad)" stroke="rgba(255,215,0,0.2)" stroke-width="1.5" filter="url(#ledShadow)"/>
+      <rect x="30" y="30" width="150" height="26" rx="6" fill="#ffd700" fill-opacity="0.15"/>
+      <text x="42" y="47" font-size="11" font-weight="900" fill="#ffd700">TRANSACTION RECORDS</text>
+
+      <text x="30" y="100" font-size="30" font-weight="900" fill="#ffffff">FINANCIAL HISTORY</text>
+      <text x="30" y="130" font-size="14" font-weight="600" fill="#ffd700">COMPLETE AUDITABLE LEDGER</text>
+
+      <text x="30" y="165" font-size="12" font-weight="400" fill="#94a3b8" text-anchor="start"><tspan x="30" >Real-time transaction tracking, merchant</tspan><tspan x="30" dy="20">categorization, multi-card expenditure records,</tspan><tspan x="30" dy="20">and searchable ledger history.</tspan></text>
+
+      <line x1="30" y1="240" x2="390" y2="240" stroke="rgba(255,255,255,0.1)"/>
+
+      <g transform="translate(30, 270)">
+        <text x="0" y="0" font-size="11" font-weight="800" fill="#64748b">TOTAL RECORDED ITEMS</text>
+        <text x="0" y="32" font-size="28" font-weight="900" fill="#ffffff">1,420 Entries</text>
+      </g>
+    </g>
+
+    <!-- CENTER PHONE (ledger-history) -->
+    <g transform="translate(595, 30)">
+      <rect x="0" y="0" width="410" height="840" rx="40" fill="#070b14" stroke="#ffd700" stroke-width="3" filter="url(#ledShadow)"/>
+      <rect x="6" y="6" width="398" height="828" rx="34" fill="#090d18"/>
+
+      
+    <!-- Top Phone Status Bar -->
+    <g transform="translate(0, 12)">
+      <text x="24" y="16" font-size="11" font-weight="700" fill="#ffffff">6:56</text>
+      <!-- Status Icons -->
+      <path d="M380 12 h12 v8 h-12 z" fill="#ffffff" opacity="0.8"/>
+      <circle cx="360" cy="16" r="4" fill="#ffffff" opacity="0.8"/>
+      <path d="M335 12 l8 10 h-16 z" fill="#ffffff" opacity="0.8"/>
+    </g>
+
+    <!-- App Header Bar -->
+    <g transform="translate(16, 36)">
+      <!-- Logo Square -->
+      <rect x="0" y="0" width="36" height="36" rx="10" fill="#ffd700" />
+      <text x="11" y="24" font-size="18" font-weight="900" fill="#050811">c</text>
+
+      <!-- Title & 24K Badge -->
+      <text x="46" y="24" font-size="20" font-weight="900" fill="#ffffff" letter-spacing="0.5">Ledger</text>
+      <rect x="122" y="8" width="32" height="18" rx="4" fill="#ffd700" />
+      <text x="126" y="21" font-size="10" font-weight="900" fill="#050811">24K</text>
+
+      <!-- Sparkle Icon -->
+      <circle cx="170" cy="17" r="14" fill="#ffd700" fill-opacity="0.15" stroke="#ffd700" stroke-width="1"/>
+      <text x="165" y="22" font-size="12" fill="#ffd700">✨</text>
+
+      <!-- Currency Pill -->
+      <rect x="196" y="6" width="68" height="22" rx="11" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+      <text x="206" y="21" font-size="10" font-weight="800" fill="#ffffff">AED</text>
+
+      <!-- Cloud Sync -->
+      <text x="278" y="22" font-size="14" fill="#94a3b8">☁</text>
+
+      <!-- Notification Bell with badge -->
+      <g transform="translate(305, 4)">
+        <text x="0" y="18" font-size="15" fill="#ffffff">🔔</text>
+        <circle cx="12" cy="4" r="7" fill="#ef4444"/>
+        <text x="9" y="7" font-size="9" font-weight="800" fill="#ffffff">2</text>
+      </g>
+
+      <!-- User Avatar -->
+      <circle cx="348" cy="17" r="14" fill="#334155" stroke="#ffd700" stroke-width="1.5"/>
+      <text x="343" y="21" font-size="12" fill="#ffffff">👤</text>
+    </g>
+  
+
+      <!-- PHONE SCREEN CONTENT -->
+      <g transform="translate(16, 90)">
+        <text x="0" y="24" font-size="18" font-weight="900" fill="#ffffff">Transaction History</text>
+
+        <g transform="translate(240, 0)">
+          <rect width="138" height="34" rx="10" fill="url(#goldBtnGrad)"/>
+          <text x="69" y="21" font-size="10" font-weight="900" fill="#050811" text-anchor="middle">+ Add Record</text>
+        </g>
+
+        <!-- Search Bar -->
+        <g transform="translate(0, 42)">
+          <rect width="378" height="42" rx="12" fill="#0b1326" stroke="rgba(255,255,255,0.1)"/>
+          <text x="16" y="26" font-size="11" fill="#94a3b8">🔍 Search by merchant, category, tag...</text>
+        </g>
+
+        <!-- Transactions List -->
+        <g transform="translate(0, 98)">
+          
+      <g transform="translate(0, 0)">
+        <rect width="378" height="84" rx="14" fill="url(#phoneCardGrad)" stroke="rgba(255,255,255,0.08)"/>
+        
+        <rect x="12" y="14" width="36" height="36" rx="10" fill="#0b1326" stroke="rgba(255,255,255,0.1)"/>
+        <text x="30" y="38" font-size="16" text-anchor="middle">🛍</text>
+
+        <text x="56" y="28" font-size="12" font-weight="800" fill="#ffffff">Carrefour Hypermarket</text>
+        <text x="56" y="44" font-size="9" font-weight="500" fill="#94a3b8">Groceries &amp; Supermarket • ADCB Credit Card</text>
+        <text x="56" y="60" font-size="9" font-weight="600" fill="#64748b">Weekly family groceries &amp; essentials</text>
+
+        <text x="364" y="32" font-size="13" font-weight="900" fill="#ef4444" text-anchor="end">-AED 845.50</text>
+        <rect x="304" y="44" width="60" height="18" rx="9" fill="#070c18"/>
+        <text x="334" y="56" font-size="8" font-weight="700" fill="#ffd700" text-anchor="middle">#Groceries</text>
+      </g>
+    
+      <g transform="translate(0, 92)">
+        <rect width="378" height="84" rx="14" fill="url(#phoneCardGrad)" stroke="rgba(255,255,255,0.08)"/>
+        
+        <rect x="12" y="14" width="36" height="36" rx="10" fill="#0b1326" stroke="rgba(255,255,255,0.1)"/>
+        <text x="30" y="38" font-size="16" text-anchor="middle">💼</text>
+
+        <text x="56" y="28" font-size="12" font-weight="800" fill="#ffffff">TechCorp Global</text>
+        <text x="56" y="44" font-size="9" font-weight="500" fill="#94a3b8">Salary &amp; Wages • Bank Deposit</text>
+        <text x="56" y="60" font-size="9" font-weight="600" fill="#64748b">July Monthly Salary</text>
+
+        <text x="364" y="32" font-size="13" font-weight="900" fill="#10b981" text-anchor="end">+AED 18,500.00</text>
+        <rect x="304" y="44" width="60" height="18" rx="9" fill="#070c18"/>
+        <text x="334" y="56" font-size="8" font-weight="700" fill="#ffd700" text-anchor="middle">#Salary</text>
+      </g>
+    
+      <g transform="translate(0, 184)">
+        <rect width="378" height="84" rx="14" fill="url(#phoneCardGrad)" stroke="rgba(255,255,255,0.08)"/>
+        
+        <rect x="12" y="14" width="36" height="36" rx="10" fill="#0b1326" stroke="rgba(255,255,255,0.1)"/>
+        <text x="30" y="38" font-size="16" text-anchor="middle">🏢</text>
+
+        <text x="56" y="28" font-size="12" font-weight="800" fill="#ffffff">Emaar Properties</text>
+        <text x="56" y="44" font-size="9" font-weight="500" fill="#94a3b8">Housing &amp; Rent • Bank Transfer</text>
+        <text x="56" y="60" font-size="9" font-weight="600" fill="#64748b">Apartment monthly rent</text>
+
+        <text x="364" y="32" font-size="13" font-weight="900" fill="#ef4444" text-anchor="end">-AED 5,200.00</text>
+        <rect x="304" y="44" width="60" height="18" rx="9" fill="#070c18"/>
+        <text x="334" y="56" font-size="8" font-weight="700" fill="#ffd700" text-anchor="middle">#Rent</text>
+      </g>
+    
+      <g transform="translate(0, 276)">
+        <rect width="378" height="84" rx="14" fill="url(#phoneCardGrad)" stroke="rgba(255,255,255,0.08)"/>
+        
+        <rect x="12" y="14" width="36" height="36" rx="10" fill="#0b1326" stroke="rgba(255,255,255,0.1)"/>
+        <text x="30" y="38" font-size="16" text-anchor="middle">⛽</text>
+
+        <text x="56" y="28" font-size="12" font-weight="800" fill="#ffffff">ADNOC Distribution</text>
+        <text x="56" y="44" font-size="9" font-weight="500" fill="#94a3b8">Transport &amp; Fuel • ADCB Credit Card</text>
+        <text x="56" y="60" font-size="9" font-weight="600" fill="#64748b">Vehicle Super 98 fuel refill</text>
+
+        <text x="364" y="32" font-size="13" font-weight="900" fill="#ef4444" text-anchor="end">-AED 180.00</text>
+        <rect x="304" y="44" width="60" height="18" rx="9" fill="#070c18"/>
+        <text x="334" y="56" font-size="8" font-weight="700" fill="#ffd700" text-anchor="middle">#Fuel</text>
+      </g>
+    
+      <g transform="translate(0, 368)">
+        <rect width="378" height="84" rx="14" fill="url(#phoneCardGrad)" stroke="rgba(255,255,255,0.08)"/>
+        
+        <rect x="12" y="14" width="36" height="36" rx="10" fill="#0b1326" stroke="rgba(255,255,255,0.1)"/>
+        <text x="30" y="38" font-size="16" text-anchor="middle">🍽</text>
+
+        <text x="56" y="28" font-size="12" font-weight="800" fill="#ffffff">Ceviche Seafood Grill</text>
+        <text x="56" y="44" font-size="9" font-weight="500" fill="#94a3b8">Dining &amp; Cafes • ADCB Credit Card</text>
+        <text x="56" y="60" font-size="9" font-weight="600" fill="#64748b">Team celebratory dinner</text>
+
+        <text x="364" y="32" font-size="13" font-weight="900" fill="#ef4444" text-anchor="end">-AED 320.00</text>
+        <rect x="304" y="44" width="60" height="18" rx="9" fill="#070c18"/>
+        <text x="334" y="56" font-size="8" font-weight="700" fill="#ffd700" text-anchor="middle">#Dining</text>
+      </g>
+    
+        </g>
+      </g>
+
+      
+    <g transform="translate(0, 765)">
+      <rect x="0" y="0" width="410" height="75" fill="#070b14" stroke-top="#1e293b"/>
+      
+        <g transform="translate(20, 12)">
+          <text x="22" y="14" font-size="14" text-anchor="middle" fill="#64748b">⊞</text>
+          <text x="22" y="28" font-size="9" font-weight="600" text-anchor="middle" fill="#64748b">Home</text>
+        </g>
+      
+        <g transform="translate(92, 12)">
+          <rect x="-6" y="-4" width="56" height="38" rx="10" fill="#ffd700" fill-opacity="0.2" stroke="#ffd700" stroke-width="1"/>
+          <text x="22" y="14" font-size="14" text-anchor="middle" fill="#ffd700">▤</text>
+          <text x="22" y="28" font-size="9" font-weight="800" text-anchor="middle" fill="#ffd700">History</text>
+        </g>
+      
+        <g transform="translate(164, 12)">
+          <text x="22" y="14" font-size="14" text-anchor="middle" fill="#64748b">◐</text>
+          <text x="22" y="28" font-size="9" font-weight="600" text-anchor="middle" fill="#64748b">Budgets</text>
+        </g>
+      
+        <g transform="translate(236, 12)">
+          <text x="22" y="14" font-size="14" text-anchor="middle" fill="#64748b">🐖</text>
+          <text x="22" y="28" font-size="9" font-weight="600" text-anchor="middle" fill="#64748b">Goals</text>
+        </g>
+      
+        <g transform="translate(308, 12)">
+          <text x="22" y="14" font-size="14" text-anchor="middle" fill="#64748b">✨</text>
+          <text x="22" y="28" font-size="9" font-weight="600" text-anchor="middle" fill="#64748b">AI Assist</text>
+        </g>
+      
+    </g>
+  
+    </g>
+
+    <!-- RIGHT PANEL -->
+    <g transform="translate(1100, 100)">
+      <rect width="420" height="700" rx="20" fill="url(#cardBgGrad)" stroke="rgba(255,215,0,0.2)" stroke-width="1.5" filter="url(#ledShadow)"/>
+      <text x="30" y="40" font-size="11" font-weight="900" fill="#ffd700">AUDIT TRAIL</text>
+      <text x="30" y="70" font-size="20" font-weight="800" fill="#ffffff">MERCHANT INTEGRATION</text>
+
+      <g transform="translate(30, 100)">
+        <rect width="360" height="120" rx="12" fill="#070c18" stroke="rgba(255,255,255,0.1)"/>
+        <text x="20" y="30" font-size="12" font-weight="800" fill="#ffd700">INSTANT MERCHANT RECOGNITION</text>
+        <text x="20" y="55" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start"><tspan x="20" >Detailed merchant tracking and automated</tspan><tspan x="20" dy="18">expense categorization across all active</tspan><tspan x="20" dy="18">bank accounts and credit cards.</tspan></text>
+      </g>
+    </g>
+
+  </svg>

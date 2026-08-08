@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1760" width="100%" height="100%" style="background-color: #ebf5f0;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2fbf6" />
+      <stop offset="100%" stop-color="#e2f3e9" />
+    </linearGradient>
+
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0a2e18" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <style>
+    .txt-title { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #064e3b; }
+    .txt-sub { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 500; fill: #475569; }
+    .txt-dark { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #0f172a; }
+    .txt-muted { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 600; fill: #64748b; }
+    .txt-green { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #059669; }
+    .txt-white { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #ffffff; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="1760" fill="url(#bgGrad)" />
+
+  <!-- App Header Bar -->
+  <rect x="0" y="0" width="800" height="96" fill="#ffffff" />
+  <circle cx="56" cy="48" r="24" fill="#059669" />
+  <path d="M 46 54 C 44 40, 58 34, 68 38 C 68 52, 54 60, 46 54 Z" fill="#ffffff" />
+
+  <text x="96" y="42" class="txt-title" font-size="24">GreenRoute AI</text>
+  <rect x="280" y="24" width="68" height="24" rx="6" fill="#dcfce7" />
+  <text x="291" y="40" fill="#166534" font-family="sans-serif" font-weight="800" font-size="12">DEMO</text>
+  <text x="96" y="68" class="txt-sub" font-size="14">Environmental Impact Analytics &amp; CO2 Savings</text>
+
+  <rect x="570" y="28" width="120" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="596" y="53" class="txt-dark" font-size="15">🌐 العربية</text>
+  <circle cx="730" cy="48" r="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="723" y="54" class="txt-dark" font-size="17">T</text>
+
+  <!-- TOTAL CARBON SAVED CARD WITH AREA CHART -->
+  <g transform="translate(24, 112)">
+    <rect width="752" height="320" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <!-- Banner Bar -->
+    <rect x="28" y="20" width="696" height="48" rx="16" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <circle cx="52" cy="44" r="14" fill="#059669"/>
+    <text x="45" y="49" fill="#ffffff" font-size="14">🌱</text>
+    <text x="78" y="49" class="txt-green" font-size="16" font-weight="900">Total Carbon Saved: 8.35 kg CO2e</text>
+
+    <rect x="580" y="28" width="132" height="32" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="596" y="49" class="txt-dark" font-size="12" font-weight="800">📊 Live Analytics</text>
+
+    <!-- Chart Axis & Grid Lines -->
+    <g transform="translate(60, 90)">
+      <line x1="0" y1="30" x2="640" y2="30" stroke="#f1f5f9" stroke-width="1.5"/>
+      <text x="-30" y="34" class="txt-muted" font-size="12">4 kg</text>
+
+      <line x1="0" y1="90" x2="640" y2="90" stroke="#f1f5f9" stroke-width="1.5"/>
+      <text x="-30" y="94" class="txt-muted" font-size="12">2 kg</text>
+
+      <line x1="0" y1="150" x2="640" y2="150" stroke="#cbd5e1" stroke-width="1.5"/>
+      <text x="-30" y="154" class="txt-muted" font-size="12">0 kg</text>
+
+      <!-- Area Chart Fill -->
+      <path d="M 0 110 Q 100 40 200 60 Q 300 130 400 40 Q 500 130 640 50 L 640 150 L 0 150 Z" fill="url(#chartGrad)"/>
+
+      <!-- Saved CO2 Green Line -->
+      <path d="M 0 110 Q 100 40 200 60 Q 300 130 400 40 Q 500 130 640 50" fill="none" stroke="#059669" stroke-width="4"/>
+
+      <!-- Car Baseline Red Dashed Line -->
+      <path d="M 0 50 Q 100 20 200 30 Q 300 80 400 20 Q 500 90 640 20" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="6,4"/>
+
+      <!-- X-Axis Labels -->
+      <text x="20" y="174" class="txt-muted" font-size="12">Mon</text>
+      <text x="120" y="174" class="txt-muted" font-size="12">Tue</text>
+      <text x="220" y="174" class="txt-muted" font-size="12">Wed</text>
+      <text x="320" y="174" class="txt-muted" font-size="12">Thu</text>
+      <text x="420" y="174" class="txt-muted" font-size="12">Fri</text>
+      <text x="520" y="174" class="txt-muted" font-size="12">Sat</text>
+      <text x="610" y="174" class="txt-muted" font-size="12">Sun</text>
+    </g>
+
+    <!-- Legend Below Chart -->
+    <g transform="translate(200, 280)">
+      <line x1="0" y1="10" x2="30" y2="10" stroke="#ef4444" stroke-width="3" stroke-dasharray="6,4"/>
+      <text x="38" y="14" class="txt-muted" font-size="13">Car Baseline (kg)</text>
+
+      <line x1="180" y1="10" x2="210" y2="10" stroke="#059669" stroke-width="4"/>
+      <text x="218" y="14" class="txt-green" font-size="13" font-weight="800">CO2 Saved (kg)</text>
+    </g>
+  </g>
+
+  <!-- METRICS CARDS GRID (3 Top + 2 Bottom) -->
+  <g transform="translate(24, 452)">
+    <rect width="752" height="300" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <!-- Row 1: 3 Metrics -->
+    <g transform="translate(28, 24)">
+      <!-- Metric 1 -->
+      <rect x="0" y="0" width="220" height="110" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="28" class="txt-muted" font-size="11">JOURNEYS SELECTED</text>
+      <text x="16" y="68" class="txt-dark" font-size="32" font-weight="900">3</text>
+      <circle cx="186" cy="30" r="14" fill="#dcfce7"/>
+      <text x="179" y="35" fill="#059669" font-size="14">✓</text>
+
+      <!-- Metric 2 -->
+      <rect x="236" y="0" width="220" height="110" rx="18" fill="#f0fdf4" stroke="#bbf7d0"/>
+      <text x="252" y="28" class="txt-green" font-size="11">CUMULATIVE CO2e AVOIDED</text>
+      <text x="252" y="68" class="txt-green" font-size="28" font-weight="900">8.35 kg</text>
+      <circle cx="422" cy="30" r="14" fill="#dcfce7"/>
+      <text x="415" y="35" fill="#059669" font-size="14">🌱</text>
+
+      <!-- Metric 3 -->
+      <rect x="472" y="0" width="224" height="110" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="488" y="28" class="txt-muted" font-size="11">CAR DISTANCE AVOIDED</text>
+      <text x="488" y="68" class="txt-dark" font-size="28" font-weight="900">52.4 km</text>
+      <circle cx="660" cy="30" r="14" fill="#f1f5f9"/>
+      <text x="653" y="35" font-size="14">🚗</text>
+    </g>
+
+    <!-- Row 2: 2 Metrics -->
+    <g transform="translate(28, 154)">
+      <!-- Metric 4 -->
+      <rect x="0" y="0" width="336" height="110" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="20" y="28" class="txt-muted" font-size="12">GREENEST SELECTION RATE</text>
+      <text x="20" y="68" class="txt-dark" font-size="32" font-weight="900">67%</text>
+
+      <rect x="200" y="40" width="116" height="28" rx="14" fill="#dcfce7"/>
+      <text x="212" y="59" fill="#15803d" font-family="sans-serif" font-size="12" font-weight="800">📈 High Rate</text>
+
+      <!-- Metric 5 -->
+      <rect x="360" y="0" width="336" height="110" rx="18" fill="#fffbebe6" stroke="#fde68a"/>
+      <text x="380" y="28" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="900">GREEN MOBILITY POINTS</text>
+      <text x="380" y="68" fill="#b45309" font-family="sans-serif" font-size="32" font-weight="900">420 Pts</text>
+
+      <rect x="560" y="40" width="116" height="32" rx="16" fill="#f59e0b"/>
+      <text x="572" y="61" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="800">Redeem Perks</text>
+    </g>
+  </g>
+
+  <!-- WEEKLY SAVINGS BAR CHART -->
+  <g transform="translate(24, 772)">
+    <rect width="752" height="320" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <text x="28" y="42" class="txt-dark" font-size="16" font-weight="900">📊 Weekly CO2e Savings Trend (kg CO2e)</text>
+    <rect x="620" y="22" width="104" height="28" rx="14" fill="#f1f5f9"/>
+    <text x="632" y="41" class="txt-dark" font-size="12" font-weight="800">Est. Weekly</text>
+
+    <!-- Bars Container -->
+    <g transform="translate(48, 80)">
+      <!-- Mon -->
+      <rect x="10" y="70" width="60" height="120" rx="12" fill="#10b981"/>
+      <text x="40" y="58" class="txt-dark" font-size="12" font-weight="800" text-anchor="middle">2.58</text>
+      <text x="40" y="210" class="txt-muted" font-size="13" text-anchor="middle">Mon</text>
+
+      <!-- Tue -->
+      <rect x="104" y="20" width="60" height="170" rx="12" fill="#059669"/>
+      <text x="134" y="10" class="txt-dark" font-size="12" font-weight="800" text-anchor="middle">3.68</text>
+      <text x="134" y="210" class="txt-muted" font-size="13" text-anchor="middle">Tue</text>
+
+      <!-- Wed -->
+      <rect x="198" y="90" width="60" height="100" rx="12" fill="#10b981"/>
+      <text x="228" y="78" class="txt-dark" font-size="12" font-weight="800" text-anchor="middle">2.09</text>
+      <text x="228" y="210" class="txt-muted" font-size="13" text-anchor="middle">Wed</text>
+
+      <!-- Thu -->
+      <rect x="292" y="40" width="60" height="150" rx="12" fill="#059669"/>
+      <text x="322" y="28" class="txt-dark" font-size="12" font-weight="800" text-anchor="middle">3.10</text>
+      <text x="322" y="210" class="txt-muted" font-size="13" text-anchor="middle">Thu</text>
+
+      <!-- Fri -->
+      <rect x="386" y="110" width="60" height="80" rx="12" fill="#34d399"/>
+      <text x="416" y="98" class="txt-dark" font-size="12" font-weight="800" text-anchor="middle">1.65</text>
+      <text x="416" y="210" class="txt-muted" font-size="13" text-anchor="middle">Fri</text>
+
+      <!-- Sat -->
+      <rect x="480" y="140" width="60" height="50" rx="12" fill="#a7f3d0"/>
+      <text x="510" y="128" class="txt-dark" font-size="12" font-weight="800" text-anchor="middle">0.85</text>
+      <text x="510" y="210" class="txt-muted" font-size="13" text-anchor="middle">Sat</text>
+
+      <!-- Sun -->
+      <rect x="574" y="60" width="60" height="130" rx="12" fill="#10b981"/>
+      <text x="604" y="48" class="txt-dark" font-size="12" font-weight="800" text-anchor="middle">2.80</text>
+      <text x="604" y="210" class="txt-muted" font-size="13" text-anchor="middle">Sun</text>
+    </g>
+
+    <text x="376" y="300" class="txt-sub" font-size="12" text-anchor="middle">"Prototype estimates based on selected demonstration journeys."</text>
+  </g>
+
+  <!-- JOURNEYS SELECTED LOG -->
+  <g transform="translate(24, 1112)">
+    <rect width="752" height="320" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <text x="28" y="40" class="txt-dark" font-size="16" font-weight="900">🗺 Journeys Selected History</text>
+    <rect x="656" y="22" width="68" height="28" rx="14" fill="#dcfce7"/>
+    <text x="672" y="41" fill="#15803d" font-family="sans-serif" font-size="12" font-weight="800">3 Total</text>
+
+    <!-- Entry 1 -->
+    <g transform="translate(28, 60)">
+      <rect width="696" height="70" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <circle cx="36" cy="35" r="18" fill="#dcfce7"/>
+      <text x="28" y="41" fill="#059669" font-size="15">🌱</text>
+
+      <text x="68" y="32" class="txt-dark" font-size="16" font-weight="900">Dubai Internet City  ➔  Dubai Mall</text>
+      <text x="68" y="52" class="txt-sub" font-size="12">Today • Greenest Route (Metro + Walking)</text>
+
+      <text x="570" y="32" class="txt-green" font-size="15" font-weight="900">+2.59 kg CO2e</text>
+      <text x="610" y="52" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="800">+130 Pts</text>
+    </g>
+
+    <!-- Entry 2 -->
+    <g transform="translate(28, 142)">
+      <rect width="696" height="70" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <circle cx="36" cy="35" r="18" fill="#dcfce7"/>
+      <text x="28" y="41" fill="#059669" font-size="15">🌱</text>
+
+      <text x="68" y="32" class="txt-dark" font-size="16" font-weight="900">Dubai Marina  ➔  DIFC Financial Centre</text>
+      <text x="68" y="52" class="txt-sub" font-size="12">Yesterday • Greenest Route (Metro Red Line)</text>
+
+      <text x="570" y="32" class="txt-green" font-size="15" font-weight="900">+3.68 kg CO2e</text>
+      <text x="610" y="52" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="800">+185 Pts</text>
+    </g>
+
+    <!-- Entry 3 -->
+    <g transform="translate(28, 224)">
+      <rect width="696" height="70" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <circle cx="36" cy="35" r="18" fill="#e0f2fe"/>
+      <text x="28" y="41" fill="#0369a1" font-size="15">⚖️</text>
+
+      <text x="68" y="32" class="txt-dark" font-size="16" font-weight="900">Business Bay  ➔  Deira City Centre</text>
+      <text x="68" y="52" class="txt-sub" font-size="12">2 days ago • Optimal Balance (Metro + Bus)</text>
+
+      <text x="570" y="32" class="txt-green" font-size="15" font-weight="900">+2.08 kg CO2e</text>
+      <text x="610" y="52" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="800">+105 Pts</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <g transform="translate(0, 1640)">
+    <rect width="800" height="120" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+
+    <g transform="translate(40, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">🚀</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Plan</text>
+    </g>
+
+    <g transform="translate(240, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">🔀</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Compare</text>
+    </g>
+
+    <!-- Impact Tab (Active) -->
+    <rect x="436" y="12" width="148" height="80" rx="20" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <circle cx="538" cy="24" r="10" fill="#059669"/>
+    <text x="538" y="31" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">3</text>
+    <text x="510" y="48" font-size="28" text-anchor="middle">📊</text>
+    <text x="510" y="76" class="txt-green" font-size="15" text-anchor="middle">Impact</text>
+
+    <g transform="translate(620, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">👤</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Profile</text>
+    </g>
+  </g>
+
+</svg>

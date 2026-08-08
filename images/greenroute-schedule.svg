@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1760" width="100%" height="100%" style="background-color: #ebf5f0;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2fbf6" />
+      <stop offset="100%" stop-color="#e2f3e9" />
+    </linearGradient>
+
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0a2e18" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <style>
+    .txt-title { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #064e3b; }
+    .txt-sub { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 500; fill: #475569; }
+    .txt-dark { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #0f172a; }
+    .txt-muted { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 600; fill: #64748b; }
+    .txt-green { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #059669; }
+    .txt-white { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #ffffff; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="1760" fill="url(#bgGrad)" />
+
+  <!-- App Header Bar -->
+  <rect x="0" y="0" width="800" height="96" fill="#ffffff" />
+  <circle cx="56" cy="48" r="24" fill="#059669" />
+  <path d="M 46 54 C 44 40, 58 34, 68 38 C 68 52, 54 60, 46 54 Z" fill="#ffffff" />
+
+  <text x="96" y="42" class="txt-title" font-size="24">GreenRoute AI</text>
+  <rect x="280" y="24" width="68" height="24" rx="6" fill="#dcfce7" />
+  <text x="291" y="40" fill="#166534" font-family="sans-serif" font-weight="800" font-size="12">DEMO</text>
+  <text x="96" y="68" class="txt-sub" font-size="14">Departure Schedule &amp; Mobility Preferences</text>
+
+  <rect x="570" y="28" width="120" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="596" y="53" class="txt-dark" font-size="15">🌐 العربية</text>
+  <circle cx="730" cy="48" r="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="723" y="54" class="txt-dark" font-size="17">T</text>
+
+  <!-- JOURNEY SCHEDULE CARD -->
+  <g transform="translate(24, 112)">
+    <rect width="752" height="320" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <text x="28" y="42" class="txt-dark" font-size="16" font-weight="900">📅 JOURNEY SCHEDULE &amp; DEPARTURE</text>
+    <rect x="640" y="22" width="84" height="28" rx="14" fill="#dcfce7"/>
+    <text x="660" y="41" fill="#15803d" font-family="sans-serif" font-size="12" font-weight="800">Today</text>
+
+    <!-- Date Selection Tabs -->
+    <g transform="translate(28, 64)">
+      <rect x="0" y="0" width="220" height="46" rx="23" fill="#059669"/>
+      <text x="110" y="28" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="800" text-anchor="middle">Today</text>
+
+      <rect x="236" y="0" width="220" height="46" rx="23" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="346" y="28" class="txt-dark" font-size="15" text-anchor="middle">Tomorrow</text>
+
+      <rect x="472" y="0" width="224" height="46" rx="23" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="584" y="28" class="txt-dark" font-size="15" text-anchor="middle">📅 Select Date</text>
+    </g>
+
+    <text x="28" y="142" class="txt-dark" font-size="14" font-weight="800">⏱ Departure Time Slot:</text>
+
+    <!-- Departure Cards (Spaced evenly within 752px) -->
+    <g transform="translate(28, 158)">
+      <!-- Card 1: Leave Now (Active) -->
+      <rect x="0" y="0" width="220" height="110" rx="18" fill="#064e3b" stroke="#059669" stroke-width="2"/>
+      <circle cx="32" cy="32" r="16" fill="#10b981"/>
+      <text x="24" y="38" fill="#ffffff" font-size="16">⚡</text>
+
+      <text x="60" y="38" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="900">Leave Now</text>
+      <text x="16" y="68" fill="#a7f3d0" font-family="sans-serif" font-size="13">Immediate departure</text>
+
+      <rect x="16" y="78" width="188" height="22" rx="11" fill="#022c22"/>
+      <text x="26" y="93" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="800">🟢 Live Traffic Active</text>
+
+      <!-- Card 2: Morning Peak -->
+      <rect x="236" y="0" width="220" height="110" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
+      <circle cx="268" cy="32" r="16" fill="#fef3c7"/>
+      <text x="260" y="38" fill="#b45309" font-size="16">🌅</text>
+
+      <text x="296" y="38" class="txt-dark" font-size="15" font-weight="800">Morning Peak</text>
+      <text x="252" y="68" class="txt-sub" font-size="13">8:00 AM Departure</text>
+
+      <rect x="252" y="78" width="188" height="22" rx="11" fill="#fef3c7"/>
+      <text x="262" y="93" fill="#b45309" font-family="sans-serif" font-size="11" font-weight="800">⚠ High Rail Frequency</text>
+
+      <!-- Card 3: Midday -->
+      <rect x="472" y="0" width="224" height="110" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
+      <circle cx="504" cy="32" r="16" fill="#fef3c7"/>
+      <text x="496" y="38" fill="#b45309" font-size="16">☀️</text>
+
+      <text x="532" y="38" class="txt-dark" font-size="15" font-weight="800">Midday</text>
+      <text x="488" y="68" class="txt-sub" font-size="13">12:00 PM Departure</text>
+
+      <rect x="488" y="78" width="192" height="22" rx="11" fill="#e0f2fe"/>
+      <text x="498" y="93" fill="#0369a1" font-family="sans-serif" font-size="11" font-weight="800">☀️ Shaded AC Walkways</text>
+    </g>
+
+    <!-- Page Dots -->
+    <circle cx="360" cy="296" r="6" fill="#059669"/>
+    <circle cx="380" cy="296" r="5" fill="#cbd5e1"/>
+    <circle cx="396" cy="296" r="5" fill="#cbd5e1"/>
+  </g>
+
+  <!-- SMART ALERT DEPARTURE REMINDER -->
+  <g transform="translate(24, 452)">
+    <rect width="752" height="64" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+    <circle cx="48" cy="32" r="16" fill="#dcfce7"/>
+    <text x="40" y="38" fill="#059669" font-size="16">🔔</text>
+
+    <text x="76" y="37" class="txt-dark" font-size="16" font-weight="800">Set Departure Reminder</text>
+
+    <rect x="580" y="16" width="144" height="32" rx="16" fill="#dcfce7"/>
+    <text x="596" y="37" fill="#15803d" font-family="sans-serif" font-size="13" font-weight="800">⚡ Smart Alert</text>
+  </g>
+
+  <!-- MOBILITY & INCLUSIVE PREFERENCES -->
+  <g transform="translate(24, 536)">
+    <rect width="752" height="420" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <text x="28" y="42" class="txt-dark" font-size="16" font-weight="900">♿ MOBILITY &amp; INCLUSIVE PREFERENCES</text>
+
+    <circle cx="640" cy="34" r="16" fill="#f1f5f9"/>
+    <text x="633" y="39" class="txt-dark" font-size="13">❮</text>
+    <text x="668" y="39" class="txt-dark" font-size="13">1 / 6</text>
+    <circle cx="710" cy="34" r="16" fill="#f1f5f9"/>
+    <text x="703" y="39" class="txt-dark" font-size="13">❯</text>
+
+    <!-- Card 1: Standard Journey (Active) -->
+    <g transform="translate(28, 64)">
+      <rect x="0" y="0" width="336" height="290" rx="20" fill="#ffffff" stroke="#059669" stroke-width="2.5"/>
+
+      <circle cx="40" cy="40" r="22" fill="#059669"/>
+      <text x="30" y="47" fill="#ffffff" font-size="18">🚀</text>
+
+      <rect x="216" y="24" width="100" height="28" rx="14" fill="#dcfce7"/>
+      <text x="232" y="43" fill="#15803d" font-family="sans-serif" font-size="12" font-weight="900">✓ Active</text>
+
+      <text x="20" y="96" class="txt-dark" font-size="18" font-weight="900">Standard journey</text>
+      <text x="20" y="126" class="txt-sub" font-size="13">Optimal balance of standard public transit routes.</text>
+
+      <!-- Graphic Box -->
+      <rect x="20" y="150" width="296" height="116" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="168" y="180" class="txt-green" font-size="12" font-weight="800" text-anchor="middle">🚆 Express Red Line</text>
+
+      <!-- Train Track Illustration -->
+      <line x1="40" y1="210" x2="296" y2="210" stroke="#0f172a" stroke-width="4" stroke-dasharray="8,6"/>
+      <rect x="110" y="195" width="116" height="30" rx="8" fill="#059669"/>
+      <rect x="120" y="202" width="16" height="12" rx="3" fill="#ffffff"/>
+      <rect x="142" y="202" width="16" height="12" rx="3" fill="#ffffff"/>
+      <rect x="164" y="202" width="16" height="12" rx="3" fill="#ffffff"/>
+      <rect x="186" y="202" width="16" height="12" rx="3" fill="#ffffff"/>
+    </g>
+
+    <!-- Card 2: Reduced Walking -->
+    <g transform="translate(388, 64)">
+      <rect x="0" y="0" width="336" height="290" rx="20" fill="#f8fafc" stroke="#e2e8f0"/>
+
+      <circle cx="40" cy="40" r="22" fill="#f1f5f9"/>
+      <text x="30" y="47" font-size="18">🚶</text>
+
+      <text x="20" y="96" class="txt-dark" font-size="18" font-weight="900">Reduced walking</text>
+      <text x="20" y="126" class="txt-sub" font-size="13">Minimizes walking distance and total transit steps.</text>
+
+      <!-- Feature Tags -->
+      <rect x="20" y="150" width="296" height="116" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+      <rect x="36" y="170" width="264" height="32" rx="16" fill="#e0f2fe"/>
+      <text x="48" y="191" fill="#0369a1" font-family="sans-serif" font-size="12" font-weight="800">♿ Elevator &amp; Level Access</text>
+
+      <rect x="36" y="212" width="264" height="32" rx="16" fill="#fef3c7"/>
+      <text x="48" y="233" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="800">☀️ Shaded AC Concourse Connections</text>
+    </g>
+
+    <!-- Indicators -->
+    <circle cx="360" cy="380" r="6" fill="#059669"/>
+    <circle cx="380" cy="380" r="5" fill="#cbd5e1"/>
+    <circle cx="396" cy="380" r="5" fill="#cbd5e1"/>
+    <circle cx="412" cy="380" r="5" fill="#cbd5e1"/>
+  </g>
+
+  <!-- COMPARE JOURNEYS ACTION BUTTON -->
+  <g transform="translate(24, 980)">
+    <rect width="752" height="60" rx="20" fill="#059669" filter="url(#shadow)"/>
+    <text x="376" y="38" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="900" text-anchor="middle">🚀 Compare Journeys</text>
+  </g>
+
+  <!-- DEMONSTRATION PROTOTYPE NOTICE -->
+  <g transform="translate(24, 1064)">
+    <rect width="752" height="100" rx="20" fill="#fffbebe6" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="28" y="36" fill="#b45309" font-family="sans-serif" font-size="14" font-weight="900">⚠ DEMONSTRATION PROTOTYPE NOTICE</text>
+    <text x="28" y="62" class="txt-sub" font-size="13">Independent proof of concept. Journey, fare and emissions information is estimated using</text>
+    <text x="28" y="80" class="txt-sub" font-size="13">demonstration data and is not an official RTA service.</text>
+  </g>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <g transform="translate(0, 1640)">
+    <rect width="800" height="120" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+
+    <g transform="translate(40, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">🚀</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Plan</text>
+    </g>
+
+    <g transform="translate(240, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">🔀</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Compare</text>
+    </g>
+
+    <g transform="translate(440, 0)">
+      <circle cx="82" cy="24" r="10" fill="#059669"/>
+      <text x="82" y="31" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">3</text>
+      <text x="60" y="48" font-size="28" text-anchor="middle">📊</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Impact</text>
+    </g>
+
+    <g transform="translate(620, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">👤</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Profile</text>
+    </g>
+  </g>
+
+</svg>

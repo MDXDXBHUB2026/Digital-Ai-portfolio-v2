@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+
+    <linearGradient id="purpleBtnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+
+    <linearGradient id="accentBtnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap');
+    * { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-sans { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    .txt-title { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 800; fill: #0f172a; }
+    .txt-sub { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 600; fill: #334155; }
+    .txt-muted { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 600; fill: #475569; }
+    .txt-purple { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; fill: #6d28d9; }
+    .txt-green { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; fill: #059669; }
+    .txt-amber { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; fill: #d97706; }
+    .txt-white { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 700; fill: #ffffff; }
+  </style>
+
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+  
+    <rect x="0" y="0" width="220" height="900" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+    <g transform="translate(16, 16)">
+      <rect x="0" y="0" width="36" height="36" rx="10" fill="url(#purpleGrad)"/>
+      <text x="8" y="24" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="900">⚡</text>
+      <text x="46" y="20" fill="#0f172a" font-family="sans-serif" font-size="14" font-weight="900" letter-spacing="-0.3">CareerConnect<tspan fill="#6d28d9">AI</tspan></text>
+      <text x="46" y="32" fill="#64748b" font-family="sans-serif" font-size="8" font-weight="800" letter-spacing="1">CAREER OS</text>
+    </g>
+
+    <line x1="0" y1="62" x2="220" y2="62" stroke="#e2e8f0" stroke-width="1"/>
+
+    <g class="font-sans">
+      <text x="20" y="80" fill="#64748b" font-family="sans-serif" font-size="9" font-weight="800" letter-spacing="1">HOME</text>
+          <text x="22" y="103" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">🏠  Home Experience</text>
+        
+            <rect x="175" y="89" width="22" height="18" rx="8" fill="#e2e8f0"/>
+            <text x="178" y="102" fill="#334155" font-family="sans-serif" font-size="9" font-weight="700">MAIN</text>
+          <text x="20" y="124" fill="#64748b" font-family="sans-serif" font-size="9" font-weight="800" letter-spacing="1">COMMAND CENTER</text>
+          <text x="22" y="147" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">📊  Analytics Dashboard</text>
+        
+          <text x="22" y="173" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">📋  Today's Plan</text>
+        
+          <text x="22" y="199" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">🎯  Opportunity Radar</text>
+        <text x="20" y="220" fill="#64748b" font-family="sans-serif" font-size="9" font-weight="800" letter-spacing="1">CAREER</text>
+          <text x="22" y="243" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">📄  Career Profile &amp; CVs</text>
+        
+            <rect x="175" y="229" width="16" height="18" rx="8" fill="#e2e8f0"/>
+            <text x="180" y="242" fill="#334155" font-family="sans-serif" font-size="9" font-weight="700">1</text>
+          
+          <text x="22" y="269" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">🧠  Career Digital Twin</text>
+        
+            <rect x="175" y="255" width="16" height="18" rx="8" fill="#e2e8f0"/>
+            <text x="180" y="268" fill="#334155" font-family="sans-serif" font-size="9" font-weight="700">AI</text>
+          
+          <text x="22" y="295" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">💡  Skills Intelligence</text>
+        
+          <text x="22" y="321" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">🎯  Target Roles</text>
+        
+          <text x="22" y="347" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">📈  Career Insights</text>
+        <text x="20" y="368" fill="#64748b" font-family="sans-serif" font-size="9" font-weight="800" letter-spacing="1">OPPORTUNITIES</text>
+          <text x="22" y="391" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">🔍  AI Job Search</text>
+        
+          <text x="22" y="417" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">📑  Job Tracker</text>
+        
+          <text x="22" y="443" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">🏢  Target Companies</text>
+        <text x="20" y="464" fill="#64748b" font-family="sans-serif" font-size="9" font-weight="800" letter-spacing="1">APPLICATIONS</text>
+          <rect x="10" y="468" width="200" height="30" rx="10" fill="url(#accentBtnGrad)" filter="url(#shadow)"/>
+          <text x="22" y="487" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">✂️  CV Studio &amp; Tailor</text>
+        
+          <text x="22" y="513" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">✉️  Cover Letters</text>
+        
+          <text x="22" y="539" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">📊  Job Match Reports</text>
+        <text x="20" y="560" fill="#64748b" font-family="sans-serif" font-size="9" font-weight="800" letter-spacing="1">NETWORK</text>
+          <text x="22" y="583" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">👥  Contacts &amp; Network</text>
+        
+            <rect x="175" y="569" width="16" height="18" rx="8" fill="#e2e8f0"/>
+            <text x="180" y="582" fill="#334155" font-family="sans-serif" font-size="9" font-weight="700">0</text>
+          
+          <text x="22" y="609" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">👤  Recruiters Database</text>
+        
+          <text x="22" y="635" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">💬  Outreach Messages</text>
+        
+          <text x="22" y="661" fill="#475569" font-family="sans-serif" font-size="11" font-weight="500">⏰  Follow-Ups</text>
+        
+    </g>
+
+    <g transform="translate(10, 860)">
+      <rect x="0" y="0" width="200" height="28" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="10" y="18" fill="#475569" font-family="sans-serif" font-size="10" font-weight="600">Direct Local Storage</text>
+      <rect x="115" y="4" width="78" height="20" rx="10" fill="#dcfce7"/>
+      <text x="122" y="18" fill="#059669" font-family="sans-serif" font-size="9" font-weight="800">✓ Storage Synced</text>
+    </g>
+  
+  
+    <!-- Top Header Navigation Bar -->
+    <rect x="220" y="0" width="1380" height="56" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Breadcrumb -->
+    <g transform="translate(240, 16)" class="font-sans">
+      <rect x="0" y="0" width="210" height="26" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="10" y="17" fill="#334155" font-size="11" font-weight="600">📄 M. Rajan Resume - Final-Mariti...</text>
+      
+      <text x="222" y="17" fill="#94a3b8" font-size="12">|</text>
+      <text x="236" y="17" fill="#6d28d9" font-size="12" font-weight="700">📌 AI CV Tailoring Engine</text>
+    </g>
+
+    <!-- Right Header Tools -->
+    <g transform="translate(1080, 12)" class="font-sans">
+      <rect x="0" y="0" width="180" height="32" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="12" y="20" fill="#64748b" font-size="11">🔍 Search or Command...</text>
+      <rect x="145" y="6" width="24" height="20" rx="4" fill="#e2e8f0"/>
+      <text x="150" y="20" fill="#475569" font-size="10" font-weight="700">⌘K</text>
+
+      <circle cx="210" cy="16" r="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="204" y="21" fill="#d97706" font-size="12">☀️</text>
+
+      <rect x="235" y="2" width="115" height="28" rx="14" fill="#dcfce7" stroke="#10b981" stroke-width="1"/>
+      <circle cx="247" cy="16" r="4" fill="#059669"/>
+      <text x="256" y="20" fill="#047857" font-size="11" font-weight="700">cv-project-189d8</text>
+
+      <rect x="360" y="2" width="28" height="28" rx="6" fill="#2563eb"/>
+      <text x="368" y="21" fill="#ffffff" font-size="16" font-weight="800">+</text>
+
+      <rect x="400" y="2" width="80" height="28" rx="14" fill="#1d4ed8"/>
+      <circle cx="414" cy="16" r="10" fill="#3b82f6"/>
+      <text x="410" y="20" fill="#ffffff" font-size="11" font-weight="800">E</text>
+      <text x="430" y="20" fill="#ffffff" font-size="11" font-weight="700">Echoflare06</text>
+    </g>
+  
+
+  <g transform="translate(240, 70)" class="font-sans">
+    
+    <!-- Top Engine Header Banner -->
+    <rect x="0" y="0" width="1330" height="68" rx="16" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="18" y="16" width="36" height="36" rx="10" fill="#e0e7ff"/>
+    <text x="27" y="40" fill="#4338ca" font-size="18">📌</text>
+
+    <text x="64" y="34" fill="#0f172a" font-size="18" font-weight="900">AI CV Tailoring Engine</text>
+    <text x="64" y="52" fill="#475569" font-size="11">Tailor Master CV wording, keyword emphasis, and ATS structure grounded strictly in verified resume experience.</text>
+
+    <rect x="1140" y="18" width="170" height="32" rx="16" fill="#dcfce7" stroke="#10b981"/>
+    <text x="1156" y="39" fill="#059669" font-size="11" font-weight="800">🛡 Factual Guardrails Active</text>
+
+    <!-- Main 2-Column Split -->
+    <!-- Left Column: Target Opportunity Details -->
+    <g transform="translate(0, 84)">
+      <rect x="0" y="0" width="420" height="720" rx="18" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#0f172a" font-size="15" font-weight="800">Target Opportunity Details</text>
+
+      <g transform="translate(20, 50)">
+        <text x="0" y="14" fill="#475569" font-size="11" font-weight="700">Target Job Title</text>
+        <rect x="0" y="22" width="380" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+        <text x="12" y="45" fill="#0f172a" font-size="12" font-weight="700">Digital Transformation Lead</text>
+
+        <text x="0" y="80" fill="#475569" font-size="11" font-weight="700">Company Name</text>
+        <rect x="0" y="88" width="380" height="36" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+        <text x="12" y="111" fill="#0f172a" font-size="12" font-weight="700">Enterprise Solutions Corp</text>
+
+        <text x="0" y="146" fill="#475569" font-size="11" font-weight="700">Job Description / Requirements *</text>
+        <rect x="0" y="154" width="380" height="180" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+        <text x="12" y="176" fill="#334155" font-size="11" width="350">Looking for an experienced Digital Transformation Lead</text>
+        <text x="12" y="194" fill="#334155" font-size="11">to drive enterprise cloud systems rollout, manage vendor</text>
+        <text x="12" y="212" fill="#334155" font-size="11">stakeholders, optimize operational processes, and ensure</text>
+        <text x="12" y="230" fill="#334155" font-size="11">Agile team execution in Dubai.</text>
+
+        <rect x="0" y="360" width="380" height="42" rx="12" fill="url(#purpleBtnGrad)" filter="url(#shadow)"/>
+        <text x="110" y="386" fill="#ffffff" font-size="13" font-weight="800">✨ Generate Tailored CV</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Tailored Output -->
+    <g transform="translate(438, 84)">
+      <rect x="0" y="0" width="892" height="720" rx="18" fill="url(#cardGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+      
+      <text x="24" y="32" fill="#0f172a" font-size="16" font-weight="900">Tailored CV Output</text>
+      <text x="24" y="50" fill="#475569" font-size="11">Optimized for Digital Transformation Lead at Enterprise Solutions Corp</text>
+
+      <rect x="740" y="18" width="100" height="36" rx="10" fill="#dcfce7" stroke="#10b981"/>
+      <text x="750" y="34" fill="#64748b" font-size="8" font-weight="800">ATS SCORE</text>
+      <text x="750" y="48" fill="#059669" font-size="16" font-weight="900">94%</text>
+
+      <rect x="850" y="18" width="28" height="36" rx="8" fill="#f1f5f9"/>
+      <text x="858" y="41" fill="#475569" font-size="14">📋</text>
+
+      <!-- Section 1: Professional Summary -->
+      <g transform="translate(24, 70)">
+        <text x="0" y="14" fill="#6d28d9" font-size="10" font-weight="900" letter-spacing="1">TAILORED PROFESSIONAL SUMMARY</text>
+        <rect x="0" y="22" width="844" height="80" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+        <text x="16" y="46" fill="#0f172a" font-size="12" font-weight="500">Manoj Rajan is a results-driven <tspan fill="#0284c7" font-weight="700">Digital Transformation Lead</tspan> with over 20 years of experience directing enterprise</text>
+        <text x="16" y="66" fill="#0f172a" font-size="12" font-weight="500">system implementations and digital transformation initiatives across regional operations. Proven track record in</text>
+        <text x="16" y="86" fill="#0f172a" font-size="12" font-weight="500">Agile project delivery, cloud migration strategy, and senior stakeholder alignment.</text>
+      </g>
+
+      <!-- Section 2: Prioritized ATS Skills -->
+      <g transform="translate(24, 192)">
+        <text x="0" y="14" fill="#6d28d9" font-size="10" font-weight="900" letter-spacing="1">PRIORITIZED ATS SKILLS</text>
+        <g transform="translate(0, 24)" font-size="11" font-weight="700">
+          <rect x="0" y="0" width="200" height="28" rx="8" fill="#f3e8ff" stroke="#c084fc"/>
+          <text x="12" y="18" fill="#6d28d9">✓ Digital Transformation Management</text>
+
+          <rect x="210" y="0" width="210" height="28" rx="8" fill="#f3e8ff" stroke="#c084fc"/>
+          <text x="222" y="18" fill="#6d28d9">✓ Enterprise System Implementation</text>
+
+          <rect x="430" y="0" width="160" height="28" rx="8" fill="#f3e8ff" stroke="#c084fc"/>
+          <text x="442" y="18" fill="#6d28d9">✓ Agile Project Management</text>
+
+          <rect x="600" y="0" width="150" height="28" rx="8" fill="#f3e8ff" stroke="#c084fc"/>
+          <text x="612" y="18" fill="#6d28d9">✓ Stakeholder Alignment</text>
+
+          <rect x="0" y="36" width="190" height="28" rx="8" fill="#f3e8ff" stroke="#c084fc"/>
+          <text x="12" y="54" fill="#6d28d9">✓ Vendor &amp; Contract Operations</text>
+
+          <rect x="200" y="36" width="180" height="28" rx="8" fill="#f3e8ff" stroke="#c084fc"/>
+          <text x="212" y="54" fill="#6d28d9">✓ Cloud Architecture Strategy</text>
+        </g>
+      </g>
+
+      <!-- Section 3: Bullet Modifications -->
+      <g transform="translate(24, 298)">
+        <text x="0" y="14" fill="#6d28d9" font-size="10" font-weight="900" letter-spacing="1">ORIGINAL VS TAILORED BULLET MODIFICATIONS</text>
+        
+        <!-- Box 1 -->
+        <g transform="translate(0, 24)">
+          <rect x="0" y="0" width="844" height="130" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="16" y="24" fill="#dc2626" font-size="9" font-weight="800">ORIGINAL BULLET:</text>
+          <text x="16" y="40" fill="#475569" font-size="11">Managed software systems and led team meetings for business operations.</text>
+
+          <text x="16" y="66" fill="#059669" font-size="9" font-weight="800">TAILORED ATS BULLET:</text>
+          <text x="16" y="82" fill="#0f172a" font-size="12" font-weight="700">Directed cross-functional Agile teams delivering enterprise software platforms, improving operational delivery speed by 28%.</text>
+          
+          <text x="16" y="110" fill="#64748b" font-size="10">Reason: Rephrased existing achievement to highlight measurable leadership impact and ATS keywords without adding unverified facts.</text>
+        </g>
+
+        <!-- Box 2 -->
+        <g transform="translate(0, 168)">
+          <rect x="0" y="0" width="844" height="130" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+          <text x="16" y="24" fill="#dc2626" font-size="9" font-weight="800">ORIGINAL BULLET:</text>
+          <text x="16" y="40" fill="#475569" font-size="11">Handled vendor discussions and software upgrades.</text>
+
+          <text x="16" y="66" fill="#059669" font-size="9" font-weight="800">TAILORED ATS BULLET:</text>
+          <text x="16" y="82" fill="#0f172a" font-size="12" font-weight="700">Managed end-to-end enterprise vendor SLA contracts and Cloud ERP upgrade rollouts across regional business units.</text>
+
+          <text x="16" y="110" fill="#64748b" font-size="10">Reason: Strengthened enterprise terms and keywords aligned directly with the target job posting.</text>
+        </g>
+      </g>
+
+      <!-- Footer Button -->
+      <g transform="translate(24, 640)">
+        <rect x="0" y="0" width="240" height="40" rx="10" fill="url(#purpleBtnGrad)"/>
+        <text x="24" y="24" fill="#ffffff" font-size="12" font-weight="800">Proceed to Generate Cover Letter →</text>
+      </g>
+    </g>
+
+  </g>
+</svg>

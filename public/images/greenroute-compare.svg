@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1760" width="100%" height="100%" style="background-color: #ebf5f0;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2fbf6" />
+      <stop offset="100%" stop-color="#e2f3e9" />
+    </linearGradient>
+
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0a2e18" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <style>
+    .txt-title { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #064e3b; }
+    .txt-sub { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 500; fill: #475569; }
+    .txt-dark { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #0f172a; }
+    .txt-muted { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 600; fill: #64748b; }
+    .txt-green { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 800; fill: #059669; }
+    .txt-white { font-family: system-ui, -apple-system, Roboto, sans-serif; font-weight: 700; fill: #ffffff; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="1760" fill="url(#bgGrad)" />
+
+  <!-- App Header Bar -->
+  <rect x="0" y="0" width="800" height="96" fill="#ffffff" />
+  <circle cx="56" cy="48" r="24" fill="#059669" />
+  <path d="M 46 54 C 44 40, 58 34, 68 38 C 68 52, 54 60, 46 54 Z" fill="#ffffff" />
+
+  <text x="96" y="42" class="txt-title" font-size="24">GreenRoute AI</text>
+  <rect x="280" y="24" width="68" height="24" rx="6" fill="#dcfce7" />
+  <text x="291" y="40" fill="#166534" font-family="sans-serif" font-weight="800" font-size="12">DEMO</text>
+  <text x="96" y="68" class="txt-sub" font-size="14">Multi-Modal Route Comparison Engine</text>
+
+  <rect x="570" y="28" width="120" height="40" rx="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="596" y="53" class="txt-dark" font-size="15">🌐 العربية</text>
+  <circle cx="730" cy="48" r="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="723" y="54" class="txt-dark" font-size="17">T</text>
+
+  <!-- ROUTE ORIGIN & DESTINATION HEADER -->
+  <g transform="translate(24, 112)">
+    <rect width="752" height="64" rx="16" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="24" y="26" class="txt-green" font-size="12" font-weight="900">ROUTES FROM</text>
+    <text x="24" y="48" class="txt-dark" font-size="18" font-weight="900">Dubai Internet City  ➔  Dubai Mall</text>
+
+    <rect x="632" y="14" width="92" height="36" rx="18" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="658" y="37" class="txt-dark" font-size="14" font-weight="800">Back</text>
+  </g>
+
+  <!-- AI MOBILITY RECOMMENDATION BANNER -->
+  <g transform="translate(24, 192)">
+    <rect width="752" height="100" rx="20" fill="#0f172a" filter="url(#shadow)"/>
+    <circle cx="48" cy="38" r="16" fill="#0284c7"/>
+    <text x="40" y="44" fill="#ffffff" font-size="15">✨</text>
+
+    <text x="76" y="32" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="900">AI MOBILITY RECOMMENDATION</text>
+    <text x="76" y="52" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="800">Recommended for your selected mobility priorities</text>
+
+    <rect x="686" y="26" width="36" height="36" rx="18" fill="#10b981"/>
+    <text x="696" y="49" fill="#ffffff" font-size="18">✓</text>
+
+    <!-- Priorities Row -->
+    <g transform="translate(24, 62)">
+      <rect x="0" y="0" width="115" height="26" rx="13" fill="#1e293b"/>
+      <text x="12" y="17" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">🌱 Emissions</text>
+
+      <rect x="125" y="0" width="95" height="26" rx="13" fill="#1e293b"/>
+      <text x="137" y="17" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">⏱ Time</text>
+
+      <rect x="230" y="0" width="95" height="26" rx="13" fill="#1e293b"/>
+      <text x="242" y="17" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">💰 Fare</text>
+
+      <rect x="335" y="0" width="115" height="26" rx="13" fill="#1e293b"/>
+      <text x="347" y="17" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="800">♿ Access</text>
+    </g>
+  </g>
+
+  <!-- CARD 1: GREENEST ROUTE -->
+  <g transform="translate(24, 308)">
+    <rect width="752" height="490" rx="24" fill="#ffffff" stroke="#059669" stroke-width="2.5" filter="url(#shadow)"/>
+
+    <!-- Header Badges -->
+    <rect x="24" y="20" width="170" height="34" rx="17" fill="#059669"/>
+    <text x="40" y="42" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="900">🌿 Greenest Route</text>
+
+    <rect x="206" y="20" width="220" height="34" rx="17" fill="#dcfce7"/>
+    <text x="222" y="42" fill="#15803d" font-family="sans-serif" font-size="13" font-weight="900">🍃 -83% vs. petrol car alone</text>
+
+    <circle cx="704" cy="37" r="16" fill="#dcfce7"/>
+    <text x="696" y="43" fill="#059669" font-size="16">✓</text>
+
+    <!-- 3 Metrics Boxes -->
+    <g transform="translate(24, 70)">
+      <rect x="0" y="0" width="220" height="70" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" class="txt-muted" font-size="12">DURATION</text>
+      <text x="16" y="52" class="txt-dark" font-size="20" font-weight="900">⏱ 32 min</text>
+
+      <rect x="240" y="0" width="220" height="70" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="256" y="24" class="txt-muted" font-size="12">ESTIMATED FARE</text>
+      <text x="256" y="52" class="txt-dark" font-size="20" font-weight="900">🏷 7.50 AED</text>
+
+      <rect x="480" y="0" width="224" height="70" rx="14" fill="#f0fdf4" stroke="#bbf7d0"/>
+      <text x="496" y="24" class="txt-green" font-size="12">EST. EMISSIONS</text>
+      <text x="496" y="52" class="txt-green" font-size="20" font-weight="900">🌱 0.52 kg</text>
+    </g>
+
+    <!-- Route Line Graphic Box -->
+    <g transform="translate(24, 156)">
+      <rect width="704" height="96" rx="16" fill="#0f172a"/>
+
+      <!-- Stations -->
+      <text x="20" y="30" fill="#38bdf8" font-family="sans-serif" font-size="13" font-weight="800">Dubai Internet City</text>
+      <text x="590" y="30" fill="#38bdf8" font-family="sans-serif" font-size="13" font-weight="800">Dubai Mall</text>
+
+      <!-- Lines -->
+      <line x1="40" y1="52" x2="160" y2="52" stroke="#ffffff" stroke-width="3" stroke-dasharray="6,4"/>
+      <circle cx="160" cy="52" r="8" fill="#10b981"/>
+
+      <line x1="160" y1="52" x2="550" y2="52" stroke="#38bdf8" stroke-width="5"/>
+      <circle cx="550" cy="52" r="8" fill="#10b981"/>
+
+      <line x1="550" y1="52" x2="664" y2="52" stroke="#ffffff" stroke-width="3" stroke-dasharray="6,4"/>
+
+      <!-- Legend Below -->
+      <text x="20" y="80" fill="#94a3b8" font-family="sans-serif" font-size="12">--- Walk (Dotted)</text>
+      <text x="280" y="80" fill="#38bdf8" font-family="sans-serif" font-size="12">━━ Metro Red Line (Solid)</text>
+      <text x="540" y="80" fill="#94a3b8" font-family="sans-serif" font-size="12">--- Bus (Dashed)</text>
+    </g>
+
+    <!-- Inclusive Comfort Badges -->
+    <g transform="translate(24, 268)">
+      <rect x="0" y="0" width="340" height="32" rx="16" fill="#e0f2fe"/>
+      <text x="16" y="21" fill="#0369a1" font-family="sans-serif" font-size="12" font-weight="800">♿ High Accessibility (Elevators &amp; Level Access)</text>
+
+      <rect x="352" y="0" width="352" height="32" rx="16" fill="#fef3c7"/>
+      <text x="368" y="21" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="800">☀️ Low Heat (Shaded Concourse &amp; AC Walkways)</text>
+    </g>
+
+    <!-- Why This Route Accordion -->
+    <g transform="translate(24, 314)">
+      <rect width="704" height="106" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="18" y="26" class="txt-dark" font-size="13" font-weight="900">❓ Why this route?</text>
+
+      <text x="18" y="48" class="txt-sub" font-size="12">Recommended for maximum sustainability. Cuts CO2e emissions by 83% compared to driving alone.</text>
+      <text x="18" y="66" class="txt-sub" font-size="12">Prioritizes zero-emissions electric rail and climate-protected pedestrian bridges.</text>
+
+      <!-- 4 Quick Fact Pills -->
+      <g transform="translate(18, 76)">
+        <rect x="0" y="0" width="120" height="22" rx="11" fill="#dcfce7"/>
+        <text x="10" y="15" fill="#15803d" font-family="sans-serif" font-size="11" font-weight="800">🌱 0.52kg CO2e</text>
+
+        <rect x="130" y="0" width="100" height="22" rx="11" fill="#f1f5f9"/>
+        <text x="140" y="15" class="txt-dark" font-size="11" font-weight="800">⏱ 32 min</text>
+
+        <rect x="240" y="0" width="100" height="22" rx="11" fill="#f1f5f9"/>
+        <text x="250" y="15" class="txt-dark" font-size="11" font-weight="800">💰 7.5 AED</text>
+
+        <rect x="350" y="0" width="120" height="22" rx="11" fill="#f1f5f9"/>
+        <text x="360" y="15" class="txt-dark" font-size="11" font-weight="800">🚶 6 min walk</text>
+      </g>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(24, 432)">
+      <rect x="0" y="0" width="180" height="42" rx="21" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="40" y="26" class="txt-dark" font-size="14" font-weight="800">🔔 Remind</text>
+
+      <rect x="196" y="0" width="508" height="42" rx="21" fill="#059669"/>
+      <text x="330" y="26" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="800" text-anchor="middle">View Journey Timeline  ➔</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: OPTIMAL BALANCE -->
+  <g transform="translate(24, 814)">
+    <rect width="752" height="380" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <rect x="24" y="20" width="180" height="34" rx="17" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="40" y="42" class="txt-dark" font-size="14" font-weight="900">⚖️ Optimal Balance</text>
+
+    <rect x="216" y="20" width="220" height="34" rx="17" fill="#dcfce7"/>
+    <text x="232" y="42" fill="#15803d" font-family="sans-serif" font-size="13" font-weight="900">🍃 -78% vs. petrol car alone</text>
+
+    <!-- 3 Metrics Boxes -->
+    <g transform="translate(24, 70)">
+      <rect x="0" y="0" width="220" height="70" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" class="txt-muted" font-size="12">DURATION</text>
+      <text x="16" y="52" class="txt-dark" font-size="20" font-weight="900">⏱ 28 min</text>
+
+      <rect x="240" y="0" width="220" height="70" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="256" y="24" class="txt-muted" font-size="12">ESTIMATED FARE</text>
+      <text x="256" y="52" class="txt-dark" font-size="20" font-weight="900">🏷 7.50 AED</text>
+
+      <rect x="480" y="0" width="224" height="70" rx="14" fill="#f0fdf4" stroke="#bbf7d0"/>
+      <text x="496" y="24" class="txt-green" font-size="12">EST. EMISSIONS</text>
+      <text x="496" y="52" class="txt-green" font-size="20" font-weight="900">🌱 0.68 kg</text>
+    </g>
+
+    <g transform="translate(24, 156)">
+      <rect x="0" y="0" width="340" height="32" rx="16" fill="#e0f2fe"/>
+      <text x="16" y="21" fill="#0369a1" font-family="sans-serif" font-size="12" font-weight="800">♿ Full Elevator &amp; Low-Floor Bus Access</text>
+
+      <rect x="352" y="0" width="352" height="32" rx="16" fill="#fef3c7"/>
+      <text x="368" y="21" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="800">☀️ Low Heat (Enclosed AC Bus Stops)</text>
+    </g>
+
+    <!-- Why This Route Summary -->
+    <g transform="translate(24, 202)">
+      <rect width="704" height="90" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="18" y="26" class="txt-dark" font-size="13" font-weight="900">❓ Why this route?</text>
+      <text x="18" y="48" class="txt-sub" font-size="12">Saves 4 minutes duration by incorporating Express Bus line with minimal transfer walking.</text>
+      <text x="18" y="68" class="txt-green" font-size="12" font-weight="800">🌱 0.68 kg CO2e • ⏱ 28 min • 💰 7.50 AED</text>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(24, 308)">
+      <rect x="0" y="0" width="180" height="42" rx="21" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="40" y="26" class="txt-dark" font-size="14" font-weight="800">🔔 Remind</text>
+
+      <rect x="196" y="0" width="508" height="42" rx="21" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="330" y="26" class="txt-dark" font-size="15" font-weight="800" text-anchor="middle">View Journey Timeline  ➔</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: EXPRESS TRAVEL -->
+  <g transform="translate(24, 1210)">
+    <rect width="752" height="380" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+
+    <rect x="24" y="20" width="180" height="34" rx="17" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="40" y="42" class="txt-dark" font-size="14" font-weight="900">⚡ Express Travel</text>
+
+    <rect x="216" y="20" width="220" height="34" rx="17" fill="#dcfce7"/>
+    <text x="232" y="42" fill="#15803d" font-family="sans-serif" font-size="13" font-weight="900">🍃 -70% vs. petrol car alone</text>
+
+    <g transform="translate(24, 70)">
+      <rect x="0" y="0" width="220" height="70" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="16" y="24" class="txt-muted" font-size="12">DURATION</text>
+      <text x="16" y="52" class="txt-dark" font-size="20" font-weight="900">⏱ 22 min</text>
+
+      <rect x="240" y="0" width="220" height="70" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="256" y="24" class="txt-muted" font-size="12">ESTIMATED FARE</text>
+      <text x="256" y="52" class="txt-dark" font-size="20" font-weight="900">🏷 9.50 AED</text>
+
+      <rect x="480" y="0" width="224" height="70" rx="14" fill="#f0fdf4" stroke="#bbf7d0"/>
+      <text x="496" y="24" class="txt-green" font-size="12">EST. EMISSIONS</text>
+      <text x="496" y="52" class="txt-green" font-size="20" font-weight="900">🌱 0.94 kg</text>
+    </g>
+
+    <g transform="translate(24, 156)">
+      <rect x="0" y="0" width="340" height="32" rx="16" fill="#e0f2fe"/>
+      <text x="16" y="21" fill="#0369a1" font-family="sans-serif" font-size="12" font-weight="800">♿ Level Access &amp; Direct Expressway Route</text>
+
+      <rect x="352" y="0" width="352" height="32" rx="16" fill="#fef3c7"/>
+      <text x="368" y="21" fill="#b45309" font-family="sans-serif" font-size="12" font-weight="800">☀️ Moderate Heat (Short Outdoor Transfer)</text>
+    </g>
+
+    <g transform="translate(24, 202)">
+      <rect width="704" height="90" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="18" y="26" class="txt-dark" font-size="13" font-weight="900">❓ Why this route?</text>
+      <text x="18" y="48" class="txt-sub" font-size="12">Fastest overall journey utilizing taxi/electric shuttle segment for maximum speed.</text>
+      <text x="18" y="68" class="txt-green" font-size="12" font-weight="800">🌱 0.94 kg CO2e • ⏱ 22 min • 💰 9.50 AED</text>
+    </g>
+
+    <g transform="translate(24, 308)">
+      <rect x="0" y="0" width="180" height="42" rx="21" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="40" y="26" class="txt-dark" font-size="14" font-weight="800">🔔 Remind</text>
+
+      <rect x="196" y="0" width="508" height="42" rx="21" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="330" y="26" class="txt-dark" font-size="15" font-weight="800" text-anchor="middle">View Journey Timeline  ➔</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <g transform="translate(0, 1640)">
+    <rect width="800" height="120" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+
+    <g transform="translate(40, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">🚀</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Plan</text>
+    </g>
+
+    <!-- Compare Tab (Active) -->
+    <rect x="236" y="12" width="148" height="80" rx="20" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+    <text x="310" y="48" font-size="28" text-anchor="middle">🔀</text>
+    <text x="310" y="76" class="txt-green" font-size="15" text-anchor="middle">Compare</text>
+
+    <g transform="translate(440, 0)">
+      <circle cx="82" cy="24" r="10" fill="#059669"/>
+      <text x="82" y="31" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">3</text>
+      <text x="60" y="48" font-size="28" text-anchor="middle">📊</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Impact</text>
+    </g>
+
+    <g transform="translate(620, 0)">
+      <text x="60" y="48" font-size="28" text-anchor="middle">👤</text>
+      <text x="60" y="76" class="txt-muted" font-size="15" text-anchor="middle">Profile</text>
+    </g>
+  </g>
+
+</svg>
